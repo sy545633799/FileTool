@@ -24,17 +24,7 @@ namespace TestProject
             ////    Console.Write(bt[i] + ":");
             ////}
             //string filePath = Path.Combine(Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent.FullName, "test.txt");
-            //using (FileStream fileStream = new FileStream(filePath, FileMode.OpenOrCreate))
-            //{
-            //    //BinaryUtil.ObjectFormat(fileStream, data);
-            //}
 
-
-            //using (FileStream fileStream = new FileStream(filePath, FileMode.OpenOrCreate))
-            //{
-            //    //PersonData person = BinaryUtil.ToObject<PersonData>(fileStream);
-            //    //Console.Write(person.ID);
-            //}
 
             Console.Read();
         }
