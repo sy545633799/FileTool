@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace TableTool.Properties
+namespace FileTool.Properties
 {
 
 

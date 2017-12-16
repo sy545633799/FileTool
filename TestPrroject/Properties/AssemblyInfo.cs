@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // 有关程序集的一般信息由以下
 // 控制。更改这些特性值可修改
 // 与程序集关联的信息。
-[assembly: AssemblyTitle("TableTool")]
+[assembly: AssemblyTitle("TestPrroject")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Microsoft")]
-[assembly: AssemblyProduct("TableTool")]
+[assembly: AssemblyProduct("TestPrroject")]
 [assembly: AssemblyCopyright("Copyright © Microsoft 2017")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // 如果此项目向 COM 公开，则下列 GUID 用于类型库的 ID
-[assembly: Guid("01c950e6-aa29-4aca-90ae-ec3f27acf27a")]
+[assembly: Guid("5bbd2c5c-7875-495c-8aae-b79d36b4e6f9")]
 
 // 程序集的版本信息由下列四个值组成: 
 //

@@ -1,4 +1,4 @@
-﻿namespace TableTool
+﻿namespace FileTool
 {
     partial class Form1
     {
