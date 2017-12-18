@@ -1,4 +1,4 @@
-﻿namespace FileTool
+﻿namespace TableExportTool
 {
     partial class Form1
     {

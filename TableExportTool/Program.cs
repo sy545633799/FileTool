@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace FileTool
+namespace TableExportTool
 {
     static class Program
     {
@@ -14,6 +14,8 @@ namespace FileTool
         [STAThread]
         static void Main()
         {
+            Console.WriteLine(Application.StartupPath);
+            Console.Read();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());

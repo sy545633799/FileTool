@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace FileTool.Properties
+namespace TableExportTool.Properties
 {
 
 
