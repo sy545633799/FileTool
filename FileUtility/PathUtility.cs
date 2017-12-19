@@ -19,10 +19,6 @@ namespace FileUtility
             //File.AppendAllLines(path, new string[] { data });
             //方式二
             //File.AppendAllText(path, data + "\r\n"); 
-            //方式三
-            //StreamWriter writer = File.AppendText(path);
-            //writer.Write(data + "\r\n");
-            //writer.Close();
 
             //FileStream写入    
             //FileMode mode = File.Exists(path) ? FileMode.Append : FileMode.Create;
@@ -66,21 +62,44 @@ namespace FileUtility
             }
         }
 
-        public void SaveToPath(string filePath, object obj)
+
+        public static void AppendToPath(string filePath, object obj)
         {
-            using (FileStream fileStream = new FileStream(filePath, FileMode.OpenOrCreate))
+            
+            using (FileStream fileStream = new FileStream(filePath, FileMode.Append))
             {
                 BinaryFormatter formatter = new BinaryFormatter();
                 formatter.Serialize(fileStream, obj);
             }
         }
 
-        public T GetFromPath<T>(string filePath) where T: class
+        public static T ReadFromPath<T>(string filePath) where T: class
         {
             using (FileStream fileStream = new FileStream(filePath, FileMode.OpenOrCreate))
             {
                 BinaryFormatter formatter = new BinaryFormatter();
                 return formatter.Deserialize(fileStream) as T;
+            }
+        }
+
+        public static void ReadFromPath(string filePath, Action<object> callback)
+        {
+            using (FileStream fileStream = new FileStream(filePath, FileMode.OpenOrCreate))
+            {
+                BinaryFormatter formatter = new BinaryFormatter();
+                while (fileStream.CanRead)
+                {
+                    if (fileStream.Position == fileStream.Length) break;
+                    try
+                    {
+                        callback(formatter.Deserialize(fileStream));
+                    }
+                    catch
+                    {
+                        Console.WriteLine("解析错误");
+                        break;
+                    }
+                }
             }
         }
 

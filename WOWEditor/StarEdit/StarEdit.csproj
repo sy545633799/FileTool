@@ -1,0 +1,456 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CC5B49D6-3AE9-41CE-A95B-8A2A92C9EAFB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>StarEdit</RootNamespace>
+    <AssemblyName>StarEdit</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>img201005241558190.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data">
+      <HintPath>.\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="zlib.net">
+      <HintPath>.\zlib.net.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CompressServices\RDFileInfo.cs" />
+    <Compile Include="CompressServices\ZlibService.cs" />
+    <Compile Include="DataServices\BiDataPack.cs" />
+    <Compile Include="DataServices\BiDataPackBook.cs" />
+    <Compile Include="DataServices\DataPack.cs" />
+    <Compile Include="DataServices\DataPackBook.cs" />
+    <Compile Include="DataServices\DataService.cs" />
+    <Compile Include="DataServices\TriDataPack.cs" />
+    <Compile Include="DataServices\TriDataPackBook.cs" />
+    <Compile Include="Forms\AddDataForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddDataForm.Designer.cs">
+      <DependentUpon>AddDataForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\BiDataEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\BiDataEditForm.Designer.cs">
+      <DependentUpon>BiDataEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\OldBiDataEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\OldBiDataEditForm.Designer.cs">
+      <DependentUpon>OldBiDataEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AddBiDataForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddBiDataForm.Designer.cs">
+      <DependentUpon>AddBiDataForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AddTriDataForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddTriDataForm.Designer.cs">
+      <DependentUpon>AddTriDataForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DataEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DataEditForm.Designer.cs">
+      <DependentUpon>DataEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Special\MovieEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Special\MovieEditForm.Designer.cs">
+      <DependentUpon>MovieEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\OldTriDataEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\OldTriDataEditForm.Designer.cs">
+      <DependentUpon>OldTriDataEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\OldDataEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\OldDataEditForm.Designer.cs">
+      <DependentUpon>OldDataEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DataViewForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DataViewForm.Designer.cs">
+      <DependentUpon>DataViewForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\TriDataEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TriDataEditForm.Designer.cs">
+      <DependentUpon>TriDataEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\IAutoControl.cs" />
+    <Compile Include="MyComponents\DoubleBufferedListView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MyComponents\UCEffectBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MyComponents\UCEffectBox.Designer.cs">
+      <DependentUpon>UCEffectBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyComponents\UCColorWordsBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MyComponents\UCColorWordsBox.Designer.cs">
+      <DependentUpon>UCColorWordsBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyComponents\UCWiseGuideBoxLabel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MyComponents\UCWiseGuideBoxLabel.designer.cs">
+      <DependentUpon>UCWiseGuideBoxLabel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyComponents\UCTimeHour.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MyComponents\UCTimeHour.Designer.cs">
+      <DependentUpon>UCTimeHour.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyComponents\UCAttrBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MyComponents\UCAttrBox.Designer.cs">
+      <DependentUpon>UCAttrBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyComponents\UCMovieData.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MyComponents\UCMovieData.Designer.cs">
+      <DependentUpon>UCMovieData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyComponents\UCRectGraph.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MyComponents\UCRectGraph.Designer.cs">
+      <DependentUpon>UCRectGraph.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyComponents\UCItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MyComponents\UCItem.Designer.cs">
+      <DependentUpon>UCItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyComponents\UCGroupItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MyComponents\UCGroupItem.Designer.cs">
+      <DependentUpon>UCGroupItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyComponents\UCItemList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MyComponents\UCItemList.Designer.cs">
+      <DependentUpon>UCItemList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyComponents\UCUnixTimeLabel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MyComponents\UCUnixTimeLabel.Designer.cs">
+      <DependentUpon>UCUnixTimeLabel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyComponents\UCBoxIcon.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MyComponents\UCBoxIcon.Designer.cs">
+      <DependentUpon>UCBoxIcon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyComponents\UCDialogBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MyComponents\UCDialogBox.Designer.cs">
+      <DependentUpon>UCDialogBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyComponents\UCComboBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MyComponents\UCComboBox.Designer.cs">
+      <DependentUpon>UCComboBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyComponents\UCPictureComboBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MyComponents\UCPictureComboBox.Designer.cs">
+      <DependentUpon>UCPictureComboBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyComponents\UCTaskRequest.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MyComponents\UCTaskRequest.Designer.cs">
+      <DependentUpon>UCTaskRequest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyComponents\UCTextBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MyComponents\UCTextBox.Designer.cs">
+      <DependentUpon>UCTextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JudgeServices\TilePixelConvertor.cs" />
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyComponents\UCCheckBoxGroup.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MyComponents\UCCheckBoxGroup.Designer.cs">
+      <DependentUpon>UCCheckBoxGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyComponents\DoubleBufferedPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MyComponents\UCBoxLabel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MyComponents\UCBoxLabel.Designer.cs">
+      <DependentUpon>UCBoxLabel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyComponents\UCWiseBoxLabel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MyComponents\UCWiseBoxLabel.designer.cs">
+      <DependentUpon>UCWiseBoxLabel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyComponents\ViewStack.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MysqlServices\OldBiDataPack.cs" />
+    <Compile Include="MysqlServices\OldBiDataPackBook.cs" />
+    <Compile Include="MysqlServices\OldTriDataPackBook.cs" />
+    <Compile Include="MysqlServices\OldTriDataPack.cs" />
+    <Compile Include="MysqlServices\OldDataPack.cs" />
+    <Compile Include="MysqlServices\OldDataPackBook.cs" />
+    <Compile Include="MysqlServices\MysqlService.cs" />
+    <Compile Include="PaintServices\MapPainter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PaintServices\WebPage.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tools\DirectoryTool.cs" />
+    <Compile Include="Tools\IniFile.cs" />
+    <Compile Include="Tools\TimeTool.cs" />
+    <EmbeddedResource Include="Forms\AddDataForm.resx">
+      <DependentUpon>AddDataForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\BiDataEditForm.resx">
+      <DependentUpon>BiDataEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\OldBiDataEditForm.resx">
+      <DependentUpon>OldBiDataEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AddBiDataForm.resx">
+      <DependentUpon>AddBiDataForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AddTriDataForm.resx">
+      <DependentUpon>AddTriDataForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DataEditForm.resx">
+      <DependentUpon>DataEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Special\MovieEditForm.resx">
+      <DependentUpon>MovieEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\OldTriDataEditForm.resx">
+      <DependentUpon>OldTriDataEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\OldDataEditForm.resx">
+      <DependentUpon>OldDataEditForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DataViewForm.resx">
+      <DependentUpon>DataViewForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TriDataEditForm.resx">
+      <DependentUpon>TriDataEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyComponents\UCEffectBox.resx">
+      <DependentUpon>UCEffectBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyComponents\UCColorWordsBox.resx">
+      <DependentUpon>UCColorWordsBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyComponents\UCWiseGuideBoxLabel.resx">
+      <DependentUpon>UCWiseGuideBoxLabel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyComponents\UCTimeHour.resx">
+      <DependentUpon>UCTimeHour.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyComponents\UCAttrBox.resx">
+      <DependentUpon>UCAttrBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyComponents\UCMovieData.resx">
+      <DependentUpon>UCMovieData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyComponents\UCRectGraph.resx">
+      <DependentUpon>UCRectGraph.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyComponents\UCItem.resx">
+      <DependentUpon>UCItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyComponents\UCGroupItem.resx">
+      <DependentUpon>UCGroupItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyComponents\UCItemList.resx">
+      <DependentUpon>UCItemList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyComponents\UCUnixTimeLabel.resx">
+      <DependentUpon>UCUnixTimeLabel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyComponents\UCBoxIcon.resx">
+      <DependentUpon>UCBoxIcon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyComponents\UCDialogBox.resx">
+      <DependentUpon>UCDialogBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyComponents\UCComboBox.resx">
+      <DependentUpon>UCComboBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyComponents\UCPictureComboBox.resx">
+      <DependentUpon>UCPictureComboBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyComponents\UCTaskRequest.resx">
+      <DependentUpon>UCTaskRequest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyComponents\UCTextBox.resx">
+      <DependentUpon>UCTextBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyComponents\UCCheckBoxGroup.resx">
+      <DependentUpon>UCCheckBoxGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyComponents\UCBoxLabel.resx">
+      <DependentUpon>UCBoxLabel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyComponents\UCWiseBoxLabel.resx">
+      <DependentUpon>UCWiseBoxLabel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="ClassDiagram2.cd" />
+    <None Include="ClassDiagram3.cd" />
+    <None Include="ClassDiagram4.cd" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="img201005241558190.ico" />
+    <None Include="Resources\93Bloody-Robe.png" />
+    <None Include="Resources\0127Star-Circlet.png" />
+    <None Include="Resources\034-Item03.png" />
+    <None Include="Resources\044-Skill01.png" />
+    <None Include="Resources\0154freeze-charm.png" />
+    <None Include="Resources\0124Golden-Choker.png" />
+    <None Include="Resources\0133Storm-Shield.png" />
+    <None Include="Resources\0176All-Divide.png" />
+    <None Include="Resources\Key02.png" />
+    <None Include="Resources\Key03.png" />
+    <None Include="Resources\0138Star-Shield.png" />
+    <None Include="Resources\048-Skill05.png" />
+    <None Include="Resources\035-Item04.png" />
+    <None Include="Resources\0163force-Ring.png" />
+    <None Include="Resources\0211banana.png" />
+    <None Include="Resources\010-Head01.png" />
+    <None Include="Resources\015-Body03.png" />
+    <None Include="Resources\0080Skull-Staff.png" />
+    <None Include="Resources\050-Skill07.png" />
+    <None Include="Resources\045-Skill02.png" />
+    <None Include="Resources\0183fire-crystal.png" />
+    <None Include="Resources\Sephira.png" />
+    <None Include="Resources\033-Item02.png" />
+    <None Include="Resources\0008Vorpal-Sword.png" />
+    <None Include="Resources\022-Potion02.png" />
+    <None Include="Resources\036-Item05.png" />
+    <None Include="Resources\0062dragon-fang.png" />
+    <None Include="Resources\046-Skill03.png" />
+    <None Include="Resources\Item07.png" />
+    <None Include="Resources\039-Item08.png" />
+    <None Include="Resources\Orz-Earring.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MessageBoxExLib\MessageBoxExLib.csproj">
+      <Project>{EE4FEF1D-71D4-4AFC-8870-1DD634507201}</Project>
+      <Name>MessageBoxExLib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -61,8 +61,11 @@ namespace TableExportTool.ExportBin
             {
                 if (spiltFied[i].Equals("1"))//客户端  
                 {
+                    //生成cs文件
                     GenerateTableStruct(progressCalback, spiltFied[i]);
+                    //生成TableEntity文件
                     GenerateRunTimeTable(spiltFied[i]);
+                    //编译
                     string dllOutPath = CompileCode(spiltFied[i], serializableProgress);//, Serializeble);
 
                     //客户端结构文件
@@ -353,6 +356,7 @@ namespace TableExportTool.ExportBin
 
         }
 
+        
 
         
 
@@ -384,7 +388,7 @@ namespace TableExportTool.ExportBin
                 Customerclass.BaseTypes.Add(new CodeTypeReference("BaseTable<" + sheet.SheetName + ">"));
 
                 var xlsxMapping = new CodeMemberField();
-                xlsxMapping.Attributes = MemberAttributes.Public | MemberAttributes.Final;
+                xlsxMapping.Attributes  = MemberAttributes.Public | MemberAttributes.Final;
                 xlsxMapping.Name = "XlsxMapping";
                 xlsxMapping.Type = new CodeTypeReference(typeof(string));
                 xlsxMapping.InitExpression = new CodeSnippetExpression("\"" + xlsxFileName + "\"");
