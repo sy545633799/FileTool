@@ -15,6 +15,7 @@ namespace FileUtility
     {
         public static void WriteToPath(string path, string data)
         {
+            //File类写入
             //方式一
             //File.AppendAllLines(path, new string[] { data });
             //方式二
@@ -101,39 +102,6 @@ namespace FileUtility
                     }
                 }
             }
-        }
-
-        /// <summary>   
-        /// 将 Stream 写入文件   
-        /// </summary>   
-        public void StreamToFile(Stream stream, string filepath)
-        {
-            // 把 Stream 转换成 byte[]   
-            byte[] bytes = new byte[stream.Length];
-            stream.Read(bytes, 0, bytes.Length);
-            // 设置当前流的位置为流的开始   
-            stream.Seek(0, SeekOrigin.Begin);
-            // 把 byte[] 写入文件   
-            FileStream fs = new FileStream(filepath, FileMode.Create);
-            BinaryWriter bw = new BinaryWriter(fs);
-            bw.Write(bytes);
-            bw.Close();
-            fs.Close();
-        }
-        /// <summary>   
-        /// 从文件读取 Stream   
-        /// </summary>   
-        public Stream FileToStream(string filepath)
-        {
-            // 打开文件   
-            FileStream fileStream = new FileStream(filepath, FileMode.Open, FileAccess.Read, FileShare.Read);
-            // 读取文件的 byte[]   
-            byte[] bytes = new byte[fileStream.Length];
-            fileStream.Read(bytes, 0, bytes.Length);
-            fileStream.Close();
-            // 把 byte[] 转换成 Stream   
-            Stream stream = new MemoryStream(bytes);
-            return stream;
         }
 
     }

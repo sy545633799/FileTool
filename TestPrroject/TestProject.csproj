@@ -32,6 +32,24 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EPPlus">
+      <HintPath>..\Packages\EPPlus.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>..\Packages\NPOI4.0\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI">
+      <HintPath>..\Packages\NPOI4.0\NPOI.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OOXML">
+      <HintPath>..\Packages\NPOI4.0\NPOI.OOXML.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OpenXml4Net">
+      <HintPath>..\Packages\NPOI4.0\NPOI.OpenXml4Net.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OpenXmlFormats">
+      <HintPath>..\Packages\NPOI4.0\NPOI.OpenXmlFormats.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -45,6 +63,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Data\BaseTable.cs" />
     <Compile Include="Data\CSVParser.cs" />
     <Compile Include="Data\Data.cs" />
     <Compile Include="Data\LoadTable.cs" />

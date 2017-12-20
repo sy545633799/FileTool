@@ -13,19 +13,11 @@ namespace TestProject
 {
     class Program
     {
-        
-
         static void Main(string[] args)
         {
 
-            PersonData data = new PersonData();
-            data.Age = 13;
-            data.ID = 123;
-            data.Name = "test";
-            data.Job = "programmer";
+            
 
-            
-            
             Console.Read();
         }
     }

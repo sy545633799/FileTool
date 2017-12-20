@@ -37,7 +37,7 @@ public interface IBaseTable
     
 }
 
-public abstract class BaseTable<T>:IBaseTable
+public abstract class BaseBinTable<T>:IBaseTable
 {
     public static List<T> list = new List<T>();
     public static Dictionary<int, T> dictionary = new Dictionary<int, T>();
