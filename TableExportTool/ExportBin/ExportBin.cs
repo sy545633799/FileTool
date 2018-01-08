@@ -21,7 +21,7 @@ namespace TableExportTool.ExportBin
     {
         public void Generate(Action<ISheet> progressCalback, GenerateType generateType, Action completeCallback, Action<string> serializableProgress)
         {
-            if (!PathManager.Instance.CheckConfigPath())
+            if (!PathManager01.Instance.CheckConfigPath())
             {
                 completeCallback();
                 return;
@@ -33,26 +33,26 @@ namespace TableExportTool.ExportBin
             {
                 loopCount = 2;
                 fieldType = "1&2";
-                PathManager.Instance._filesPath.Add("1", new List<string>());
-                PathManager.Instance._filesPath.Add("2", new List<string>());
+                PathManager01.Instance._filesPath.Add("1", new List<string>());
+                PathManager01.Instance._filesPath.Add("2", new List<string>());
             }
             else if ((int)generateType == 2)
             {
                 fieldType = "2";
-                PathManager.Instance._filesPath.Add("2", new List<string>());
+                PathManager01.Instance._filesPath.Add("2", new List<string>());
             }
             else if ((int)generateType == 1)
             {
                 fieldType = "1";
-                PathManager.Instance._filesPath.Add("1", new List<string>());
+                PathManager01.Instance._filesPath.Add("1", new List<string>());
             }
 
 
             var spiltFied = fieldType.Split('&');
 
-            if (!PathManager.Instance.LoadBaseTable(spiltFied))
+            if (!PathManager01.Instance.LoadBaseTable(spiltFied))
             {
-                PathManager.Instance._filesPath.Clear();
+                PathManager01.Instance._filesPath.Clear();
                 completeCallback();
                 return;
             }
@@ -69,18 +69,18 @@ namespace TableExportTool.ExportBin
                     string dllOutPath = CompileCode(spiltFied[i], serializableProgress);//, Serializeble);
 
                     //客户端结构文件
-                    if (PathManager.Instance._configPathNew.ContainsKey(ConfigConst.ClientDllOutPath))
+                    if (PathManager01.Instance._configPathNew.ContainsKey(ConfigConst.ClientDllOutPath))
                     {
-                        foreach (var s in PathManager.Instance._configPathNew[ConfigConst.ClientDllOutPath])
+                        foreach (var s in PathManager01.Instance._configPathNew[ConfigConst.ClientDllOutPath])
                         {
                             File.Copy(dllOutPath, s + "\\DMNTableData.dll", true);
                         }
                     }
                     //客户端Bin
-                    if (PathManager.Instance._configPathNew.ContainsKey(ConfigConst.ClientBinOutPath))
+                    if (PathManager01.Instance._configPathNew.ContainsKey(ConfigConst.ClientBinOutPath))
                     {
                         Assembly ab = Assembly.Load(File.ReadAllBytes(dllOutPath));
-                        foreach (var s in PathManager.Instance._configPathNew[ConfigConst.ClientBinOutPath])
+                        foreach (var s in PathManager01.Instance._configPathNew[ConfigConst.ClientBinOutPath])
                         {
                             Serializeble(ab, s, serializableProgress);
                         }
@@ -110,11 +110,11 @@ namespace TableExportTool.ExportBin
             }
 
 
-            if (PathManager.Instance.GenerateProtobuf)
+            if (PathManager01.Instance.GenerateProtobuf)
             {
-                if (PathManager.Instance._configPath.ContainsKey(ConfigConst.ProtoBuffPath))
+                if (PathManager01.Instance._configPath.ContainsKey(ConfigConst.ProtoBuffPath))
                 {
-                    string batPath = PathManager.Instance._configPath[ConfigConst.ProtoBuffPath];
+                    string batPath = PathManager01.Instance._configPath[ConfigConst.ProtoBuffPath];
                     string eBatPath = Path.GetDirectoryName(batPath);
                     Environment.CurrentDirectory = eBatPath;
                     Process.Start(batPath);
@@ -123,7 +123,7 @@ namespace TableExportTool.ExportBin
             }
 
             completeCallback();
-            PathManager.Instance._filesPath.Clear();
+            PathManager01.Instance._filesPath.Clear();
         }
 
 
@@ -137,10 +137,10 @@ namespace TableExportTool.ExportBin
             compilerParameters.ReferencedAssemblies.Add("System.dll");
             compilerParameters.ReferencedAssemblies.Add("EPPlus.dll");
             compilerParameters.GenerateInMemory = false;
-            string filePath = PathManager.Instance.GenerateOutPath(ConfigConst.OutPath, spiltFied, string.Empty, "\\DMNTableData.dll");
-            compilerParameters.CompilerOptions = "/doc:" + PathManager.Instance.GenerateOutPath(ConfigConst.OutPath, spiltFied, string.Empty, "\\DMNTableDataDoc.xml");
+            string filePath = PathManager01.Instance.GenerateOutPath(ConfigConst.OutPath, spiltFied, string.Empty, "\\DMNTableData.dll");
+            compilerParameters.CompilerOptions = "/doc:" + PathManager01.Instance.GenerateOutPath(ConfigConst.OutPath, spiltFied, string.Empty, "\\DMNTableDataDoc.xml");
             compilerParameters.OutputAssembly = filePath;
-            CompilerResults cr = cSharpCodeProvider.CompileAssemblyFromFile(compilerParameters, PathManager.Instance._filesPath[spiltFied].ToArray());
+            CompilerResults cr = cSharpCodeProvider.CompileAssemblyFromFile(compilerParameters, PathManager01.Instance._filesPath[spiltFied].ToArray());
             for (int i = 0; i < cr.Errors.Count; i++)
             {
                 if (!cr.Errors[i].IsWarning)
@@ -164,7 +164,7 @@ namespace TableExportTool.ExportBin
             StringBuilder sb = new StringBuilder();
             Dictionary<string, IList> dictionary = new Dictionary<string, IList>();
 
-            foreach (var sheet in PathManager.Instance._tableList)
+            foreach (var sheet in PathManager01.Instance._tableList)
             {
 
                 Type t = ab.GetType(sheet.SheetName);
@@ -362,11 +362,11 @@ namespace TableExportTool.ExportBin
 
         private void GenerateTableStruct(Action<ISheet> progressCalback, string generateType)
         {
-            foreach (var sheet in PathManager.Instance._generateList)
+            foreach (var sheet in PathManager01.Instance._generateList)
             {
 
                 string xlsxFileName = string.Empty;
-                foreach (var vk in PathManager.Instance._pathMapping)
+                foreach (var vk in PathManager01.Instance._pathMapping)
                 {
                     if (vk.Value.Contains(sheet))
                     {
@@ -596,11 +596,11 @@ namespace TableExportTool.ExportBin
                 var options = new CodeGeneratorOptions();
                 options.BracingStyle = "C";
                 options.BlankLinesBetweenMembers = true;
-                string outPath = PathManager.Instance.GenerateOutPath(ConfigConst.OutPathSources, generateType, "\\Table\\", sheet.SheetName + ".cs");
+                string outPath = PathManager01.Instance.GenerateOutPath(ConfigConst.OutPathSources, generateType, "\\Table\\", sheet.SheetName + ".cs");
                 using (var sw = new StreamWriter(outPath))
                 {
                     p.GenerateCodeFromCompileUnit(unit, sw, options);
-                    PathManager.Instance._filesPath[generateType].Add(outPath);
+                    PathManager01.Instance._filesPath[generateType].Add(outPath);
                     progressCalback(sheet);
                 }
             }
@@ -658,7 +658,7 @@ namespace TableExportTool.ExportBin
             Customerclass1.Members.Add(ReadData);
 
 
-            foreach (var sheet in PathManager.Instance._tableList)
+            foreach (var sheet in PathManager01.Instance._tableList)
             {
                 GetClassMethod.Statements.Add(new CodeSnippetStatement(" case \"" + sheet.SheetName + "\": "));
                 GetClassMethod.Statements.Add(new CodeSnippetStatement(sheet.SheetName + ".DecodeList(br); break; "));
@@ -669,15 +669,15 @@ namespace TableExportTool.ExportBin
             var options1 = new CodeGeneratorOptions();
             options1.BracingStyle = "C";
             options1.BlankLinesBetweenMembers = true;
-            string outPath = PathManager.Instance.GenerateOutPath(ConfigConst.OutPathSources, spiltFied, string.Empty, "\\TableEntity.cs");
-            if (PathManager.Instance._configPath.ContainsKey(ConfigConst.OutPathSources))
+            string outPath = PathManager01.Instance.GenerateOutPath(ConfigConst.OutPathSources, spiltFied, string.Empty, "\\TableEntity.cs");
+            if (PathManager01.Instance._configPath.ContainsKey(ConfigConst.OutPathSources))
             {
-                File.Copy(PathManager.Instance._configPath[ConfigConst.DependPath], PathManager.Instance._configPath[ConfigConst.OutPathSources] + "\\BaseTable.cs", true);
+                File.Copy(PathManager01.Instance._configPath[ConfigConst.DependPath], PathManager01.Instance._configPath[ConfigConst.OutPathSources] + "\\BaseTable.cs", true);
             }
             using (var sw = new StreamWriter(outPath))
             {
                 p1.GenerateCodeFromNamespace(sampleNamespace1, sw, options1);
-                PathManager.Instance._filesPath[spiltFied].Add(outPath);
+                PathManager01.Instance._filesPath[spiltFied].Add(outPath);
             }
 
         }

@@ -29,23 +29,26 @@ namespace FileUtility
 
         public static byte[] ObjectToBinary(object obj)
         {
+            byte[] data;
             using (MemoryStream stream = new MemoryStream())
             {
                 BinaryFormatter formatter = new BinaryFormatter();
                 formatter.Serialize(stream, obj);
-                byte[] data = stream.ToArray();
+                data = stream.ToArray();
                 stream.Close();
-                return data;
             }
+            return data;
         }
 
         public static T ByteToObject<T>(byte[] data) where T : class
         {
+            T obj;
             using (MemoryStream stream = new MemoryStream(data))
             {
                 BinaryFormatter formatter = new BinaryFormatter();
-                return formatter.Deserialize(stream) as T;
+                obj = formatter.Deserialize(stream) as T;
             }
+            return obj;
         }
     }
 }
