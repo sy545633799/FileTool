@@ -22,6 +22,11 @@ namespace FileUtility
             Directory.CreateDirectory(outputPath);
 
             Dictionary<string, List<ISheet>> dictionary = ExcelUtil.LoadExcel(excelPath);
+            ToTxt(dictionary, outputPath, onComplete);
+        }
+
+        public static void ToTxt(Dictionary<string, List<ISheet>> dictionary, string outputPath, Action onComplete)
+        {
             foreach (var table in dictionary.Values)
             {
                 foreach (var sheet in table)
@@ -41,7 +46,7 @@ namespace FileUtility
                             TxtUtil.WriteToPath(textPath, line, true);
                         }
                     }
-                    catch(Exception e)
+                    catch (Exception e)
                     {
                         Console.WriteLine(e.Message);
                     }

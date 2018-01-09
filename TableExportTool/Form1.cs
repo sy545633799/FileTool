@@ -24,8 +24,8 @@ namespace TableExportTool
 
         private void button1_Click(object sender, EventArgs e)
         {
-
-            ExcelConvert.ToTxt(PathManager.filePath.ImportPath, PathManager.filePath.OutputBinPath, () => MessageBox.Show("导出完成"));
+            
+            ExcelConvert.ToTxt(sheetDic, PathManager.filePath.OutputBinPath, () => MessageBox.Show("导出完成"));
             //TableManager.InitTxtTable(TxtUtil.ReadAllFile(PathManager.filePath.OutputPath));
         }
 
