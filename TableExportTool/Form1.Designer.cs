@@ -32,8 +32,8 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.打开ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.读取ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.设置输出目录ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.设置依赖文件路径ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.设置输出目录ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.设置源文件输出路径ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -49,7 +49,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(120, 23);
             this.button1.TabIndex = 0;
-            this.button1.Text = "加载所有Excel";
+            this.button1.Text = "导出成txt";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -67,8 +67,8 @@
             // 
             this.打开ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.读取ToolStripMenuItem,
-            this.设置输出目录ToolStripMenuItem,
             this.设置依赖文件路径ToolStripMenuItem,
+            this.设置输出目录ToolStripMenuItem,
             this.设置源文件输出路径ToolStripMenuItem});
             this.打开ToolStripMenuItem.Name = "打开ToolStripMenuItem";
             this.打开ToolStripMenuItem.Size = new System.Drawing.Size(44, 21);
@@ -77,29 +77,29 @@
             // 读取ToolStripMenuItem
             // 
             this.读取ToolStripMenuItem.Name = "读取ToolStripMenuItem";
-            this.读取ToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
+            this.读取ToolStripMenuItem.Size = new System.Drawing.Size(229, 22);
             this.读取ToolStripMenuItem.Text = "打开Excel目录";
             this.读取ToolStripMenuItem.Click += new System.EventHandler(this.读取ToolStripMenuItem_Click);
-            // 
-            // 设置输出目录ToolStripMenuItem
-            // 
-            this.设置输出目录ToolStripMenuItem.Name = "设置输出目录ToolStripMenuItem";
-            this.设置输出目录ToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
-            this.设置输出目录ToolStripMenuItem.Text = "设置输出目录";
-            this.设置输出目录ToolStripMenuItem.Click += new System.EventHandler(this.设置输出目录ToolStripMenuItem_Click);
             // 
             // 设置依赖文件路径ToolStripMenuItem
             // 
             this.设置依赖文件路径ToolStripMenuItem.Name = "设置依赖文件路径ToolStripMenuItem";
-            this.设置依赖文件路径ToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
+            this.设置依赖文件路径ToolStripMenuItem.Size = new System.Drawing.Size(229, 22);
             this.设置依赖文件路径ToolStripMenuItem.Text = "设置依赖文件路径";
             this.设置依赖文件路径ToolStripMenuItem.Click += new System.EventHandler(this.设置依赖文件路径ToolStripMenuItem_Click);
+            // 
+            // 设置输出目录ToolStripMenuItem
+            // 
+            this.设置输出目录ToolStripMenuItem.Name = "设置输出目录ToolStripMenuItem";
+            this.设置输出目录ToolStripMenuItem.Size = new System.Drawing.Size(229, 22);
+            this.设置输出目录ToolStripMenuItem.Text = "设置源文件(txt/bin)输出目录";
+            this.设置输出目录ToolStripMenuItem.Click += new System.EventHandler(this.设置输出目录ToolStripMenuItem_Click);
             // 
             // 设置源文件输出路径ToolStripMenuItem
             // 
             this.设置源文件输出路径ToolStripMenuItem.Name = "设置源文件输出路径ToolStripMenuItem";
-            this.设置源文件输出路径ToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
-            this.设置源文件输出路径ToolStripMenuItem.Text = "设置源文件输出路径";
+            this.设置源文件输出路径ToolStripMenuItem.Size = new System.Drawing.Size(229, 22);
+            this.设置源文件输出路径ToolStripMenuItem.Text = "设置源文件(CS)输出路径";
             this.设置源文件输出路径ToolStripMenuItem.Click += new System.EventHandler(this.设置源文件输出路径ToolStripMenuItem_Click);
             // 
             // checkedListBox1
@@ -124,18 +124,18 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.ForeColor = System.Drawing.Color.Red;
-            this.label2.Location = new System.Drawing.Point(240, 59);
+            this.label2.ForeColor = System.Drawing.Color.Green;
+            this.label2.Location = new System.Drawing.Point(240, 71);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(65, 12);
+            this.label2.Size = new System.Drawing.Size(155, 12);
             this.label2.TabIndex = 4;
-            this.label2.Text = "输出目录：";
+            this.label2.Text = "源文件(txt/bin)输出目录：";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.ForeColor = System.Drawing.Color.Orange;
-            this.label3.Location = new System.Drawing.Point(587, 29);
+            this.label3.Location = new System.Drawing.Point(240, 50);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(89, 12);
             this.label3.TabIndex = 5;
@@ -144,12 +144,12 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.ForeColor = System.Drawing.Color.Green;
-            this.label4.Location = new System.Drawing.Point(589, 59);
+            this.label4.ForeColor = System.Drawing.Color.Purple;
+            this.label4.Location = new System.Drawing.Point(240, 92);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(41, 12);
+            this.label4.Size = new System.Drawing.Size(125, 12);
             this.label4.TabIndex = 6;
-            this.label4.Text = "源文件输出目录";
+            this.label4.Text = "源文件(cs)输出目录：";
             // 
             // Form1
             // 

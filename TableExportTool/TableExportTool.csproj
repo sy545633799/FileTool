@@ -66,7 +66,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Common\ExcelManager.cs" />
+    <Compile Include="TestRead\AppearanceTable.cs" />
+    <Compile Include="TestRead\BagTable.cs" />
+    <Compile Include="Test\Bag1Table.cs" />
+    <Compile Include="Test\BaseTable.cs" />
+    <Compile Include="TestRead\BaseTxtTable.cs" />
+    <Compile Include="TestRead\TableManager.cs" />
     <Compile Include="Test\ConfigConst.cs" />
     <Compile Include="Common\FilePath.cs" />
     <Compile Include="Common\PathManager.cs" />
@@ -112,5 +117,6 @@
       <Name>FileUtility</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

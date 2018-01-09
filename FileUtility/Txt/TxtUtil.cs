@@ -22,6 +22,7 @@ namespace FileUtility
         #region string
         public static void WriteToPath(string path, string data, bool append = false)
         {
+            #region 其他方法
             //File类写入
             //方式一
             //File.AppendAllLines(path, new string[] { data });
@@ -36,19 +37,18 @@ namespace FileUtility
             //    byte[] buffer = Encoding.UTF8.GetBytes(data);
             //    fsWrite.Write(buffer, 0, buffer.Length);
             //}
-
+#endregion
             //StreamWrite写入文件 (bool 参数表示是否append) 
             using (StreamWriter writer = new StreamWriter(path, append))
             {
-                //方式一
-                //writer.Write(data + "\r\n");
-                //方式二
                 writer.WriteLine(data);
             }
         }
 
-        public static void ReadFromPath(string filepath, Action<string> callback)
+        public static string ReadFromPath(string filepath)
         {
+            string data = "";
+            #region 替他方法
             //读取  
             //string data = File.ReadAllText(filepath);
             //string[] datas = File.ReadAllLines(filepath);
@@ -60,16 +60,26 @@ namespace FileUtility
             //File.AppendAllLines(filepath, ss);
             //string str = "apend";
             //File.AppendAllText(filepath, str);
+#endregion
             //SreamRead读取文件  
             using (StreamReader reader = new StreamReader(filepath))
             {
                 while (!reader.EndOfStream)
-                {
-                    callback(reader.ReadLine());
-                }
+                    data = reader.ReadLine();
             }
+            return data;
         }
-#endregion
+
+        public static Dictionary<string, string> ReadAllFile(string directorypath)
+        {
+            string[] filePaths = Directory.GetFiles(directorypath, "*.txt", SearchOption.AllDirectories);
+            Dictionary<string, string> dictionary = new Dictionary<string, string>();
+            for (int i = 0; i < filePaths.Length; i++)
+                dictionary[Path.GetFileNameWithoutExtension(filePaths[i])] = File.ReadAllText(filePaths[i]);
+            return dictionary;
+        }
+
+        #endregion
 
         public static void SaveToPath(string filePath, object obj, bool append)
         {
