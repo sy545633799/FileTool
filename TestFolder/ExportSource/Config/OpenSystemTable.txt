@@ -1,0 +1,17 @@
+ID	Des	System	Name	Icon	Level	Task	Hint	Window	BtnPath	FlyPath
+ID索引	策划备注	系统ID	系统名称	系统icon	等级开启	任务开启	开启是否提示	所在窗口	按钮路径	飞入路径
+int	string	int	string	string	int	int	int	string	string	string
+ID索引	策划备注，方便查询	定义具体是哪个系统	对应系统的名称	配置系统Icon的资源ID\n目录（DMNGame\Assets\ArtRes\ABPrefabs\DMNUI\Atlas\UIMain）\n设置assetbundle:(uimain hwq)	开启需求角色的等级	完成某个任务后开启，填写对应的任务ID\n当配置了任务开启后，等级开启字段无效	0、不提示\n1、提示	功能入口所在窗口	按钮路径(功能入口)	飞入让位置(全都在主界面上)
+3	0	3	1	1	3	3	3	3	3	3
+1		1	角色	zhujiemian-shangcheng-icon	1	0	0	NewUImain(Clone)	UImenu/functionList/jueseBtn	UImenu/menuHandover
+2		4	背包	zhujiemian-shangcheng-icon	1	0	0	NewUImain(Clone)	UImenu/bagBtn	UImenu/bagBtn
+3		6	好友	zhujiemian-shangcheng-icon	1	0	0	NewUImain(Clone)	UInotice/SocietyBtn	UInotice/SocietyBtn
+4		7	邮件	zhujiemian-shangcheng-icon	1	0	0	NewUImain(Clone)	UISocietyWindow(Clone)/MenuGroup/MenuGrid/TogMail	UInotice/SocietyBtn
+5		13	商城	zhujiemian-shangcheng-icon	1	0	0	NewUImain(Clone)	UIFunction/shopBtn	UIFunction/shopBtn
+6		11	技能	ben_jineng	1	13	1	NewUImain(Clone)	UImenu/functionList/SkillBtn	UImenu/menuHandover
+7		2	强化	qianghua	1	17	1	UIPanel(Clone)	ToggleGroup/IntensifyToggle	UImenu/menuHandover
+8		5	仓库	zhujiemian-shangcheng-icon	10	0	0	PackageShowWindow(Clone)	ToggleGroup/StorageToggle	UImenu/bagBtn
+9		12	异兽录	zhujiemian-shangcheng-icon	20	0	0	NewUImain(Clone)	UImenu/functionList/cardBtn	UImenu/menuHandover
+10		3	宝石	zhujiemian-shangcheng-icon	25	0	0	UIPanel(Clone)	ToggleGroup/GenToggle	UImenu/menuHandover
+11		8	打造	zhujiemian-shangcheng-icon	30	0	1	NewUImain(Clone)	UImenu/functionList/equipBtn	UImenu/menuHandover
+12		9	洗炼	zhujiemian-shangcheng-icon	35	0	0	EquipWindow(Clone)	ToggleGroup/Washtoggle	UImenu/menuHandover

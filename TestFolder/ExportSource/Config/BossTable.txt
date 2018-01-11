@@ -1,0 +1,9 @@
+ID	Level	Type	Name	Bg	Consume	Award	Mail	Award1	Mail1	Award2	Mail2	Action
+Boss的ID	BOSS所属等级段	BOSS分类	BOSS名称	BOSS背景资源	击杀奖励预览	击杀奖励	击杀奖励邮件	排名奖励	排名奖励邮件	参与奖励	参与邮件	界面动作
+int	int[]	int	string	string	int[]	int	int	int[]	int	int	int	string
+MapMonsterPositionTable表中的ID	最小等级，最大等级，奖励发放最大等级	不同类型的显示在不同界面	配置BOSS的名称	配置背景资源的ID	物品ID，物品ID，物品ID，物品ID	AwardTable表ID	击杀奖励通过邮件发放，配置MailTable表ID	对应前10名的奖励\n排名奖励读取：AwardTable表ID\n配置方式：\n第1名奖励，第10名奖励	排名奖励通过邮件发放，配置MailTable表ID	参与奖励	邮件ID	配置动作资源ID
+3	3	3	3	1	3	3	3	3	3	3	3	1
+90000	1,29,39	100	BOSS名称1	boss1_1	40001,40002,40003,40004,40005	51	1	1,2,3,4,5,6,7,8,9,10	2	56	3	1
+90001	30,39,49	100	BOSS名称2	boss2_1	40001,40002,40003,40004,40005	52	1	11,12,13,14,15,16,17,18,19,20	2	57	3	2
+90002	40,49,59	100	BOSS名称3	boss3_1	40001,40002,40003,40004,40005	53	1	21,22,23,24,25,26,27,28,29,30	2	58	3	3
+90003	50,59,69	100	BOSS名称4	boss4_1	40001,40002,40003,40004,40005	54	1	31,32,33,34,35,36,37,38,39,40	2	59	3	4

@@ -1,0 +1,42 @@
+ID	Name	AppearanceRes	Skin
+外观ID	模型名称	对应外观	是否有蒙皮信息
+int	string	string	int
+外观模型的ID，各个外观、模型从这里调用ID	资源对应名称	配置外观模型	0、没有\n1、有
+1	0	1	1
+1	法师身体（创角）	ActorModel/Master/Master_Body01	1
+2	法师头发（创角）	ActorModel/Master/Master_Hair01	1
+3	法师武器（创角）	ActorModel/Master/Master_Wea01	1
+4	法师脸部（创角）	ActorModel/Master/Master_Face01	1
+11	战士身体（创角）	ActorModel/Swordsman/Swordsman_body	1
+12	战士头（创角）	ActorModel/Swordsman/Swordsman_hair	1
+13	战士武器（创角）	ActorModel/Swordsman/Swordsman_Wea01	1
+7	李英	ActorModel/NPC/Npc_001	1
+8	精卫	ActorModel/NPC/Npc_002	1
+10099	当扈	ActorModel/NPC/Npc_danghu	1
+15	抢手身体（创角）	ActorModel/Gunner/Gunner_Body01	1
+16	抢手头发（创角）	ActorModel/Gunner/Gunner_Hair01	1
+17	抢手武器1黑（创角）	ActorModel/Gunner/Gunner_Wea01_Black	1
+18	抢手武器2白（创角）	ActorModel/Gunner/Gunner_Wea01_White	1
+19	抢手脸部（创角）	ActorModel/Gunner/Gunner_Face01	1
+10001	䳋（tong）渠	ActorModel/Monster/dms_Tongqu	1
+10002	嚻	ActorModel/Monster/dms_Xiao	1
+10003	竦斯	ActorModel/Monster/dms_songsi01	1
+10004	孟极	ActorModel/Monster/dms_Mengji	1
+10005	鸪鸟	ActorModel/Monster/dms_Guniao	1
+89	护送测试模型	ActorModel/Monster/Monster_001	1
+99	测试采集模型	ActorModel/Monster/Monster_001	1
+999995	传送NPC	ActorModel/Monster/Dms_chuansongmen	0
+999996	8米空气墙	ActorModel/Monster/common_kongqiqiang_8m	0
+999997	12米空气墙	ActorModel/Monster/common_kongqiqiang_12m	0
+999998	16米空气墙	ActorModel/Monster/common_kongqiqiang_16m	0
+999999	不显示的时候配这个		0
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			

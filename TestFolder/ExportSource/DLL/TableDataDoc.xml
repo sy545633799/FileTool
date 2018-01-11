@@ -1,0 +1,3930 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TableTool</name>
+    </assembly>
+    <members>
+        <member name="F:ActivityEventTable.ID">
+            <summary>
+            主键
+            </summary>
+        </member>
+        <member name="F:ActivityEventTable.StepDesc">
+            <summary>
+            阶段描述
+            </summary>
+        </member>
+        <member name="F:ActivityEventTable.TriggerType">
+            <summary>
+            触发类型
+            </summary>
+        </member>
+        <member name="F:ActivityEventTable.TriggerParam">
+            <summary>
+            触发参数
+            </summary>
+        </member>
+        <member name="F:ActivityEventTable.EventType">
+            <summary>
+            事件类型
+            </summary>
+        </member>
+        <member name="F:ActivityEventTable.Delay">
+            <summary>
+            延迟时间(毫秒)
+            </summary>
+        </member>
+        <member name="F:ActivityEventTable.Effect">
+            <summary>
+            事件相关参数
+            </summary>
+        </member>
+        <member name="F:ActivityEventTable.Repeat">
+            <summary>
+            重复次数
+            </summary>
+        </member>
+        <member name="F:ActivityEventTable.Interval">
+            <summary>
+            事件重复时间间隔（毫秒）
+            </summary>
+        </member>
+        <member name="F:ActivityEventTable.Dialog">
+            <summary>
+            飘字
+            </summary>
+        </member>
+        <member name="F:ActivityTable.ID">
+            <summary>
+            主键
+            </summary>
+        </member>
+        <member name="F:ActivityTable.Name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="F:ActivityTable.Type">
+            <summary>
+            活动具体玩法类型
+            </summary>
+        </member>
+        <member name="F:ActivityTable.Extend">
+            <summary>
+            扩展参数
+            </summary>
+        </member>
+        <member name="F:ActivityTable.Level">
+            <summary>
+            玩家等级
+            </summary>
+        </member>
+        <member name="F:ActivityTable.Npc">
+            <summary>
+            传送NPC
+            </summary>
+        </member>
+        <member name="F:ActivityTable.BornRegion">
+            <summary>
+            传送区域
+            </summary>
+        </member>
+        <member name="F:ActivityTable.Panel">
+            <summary>
+            面板
+            </summary>
+        </member>
+        <member name="F:ActivityTable.Week">
+            <summary>
+            开启日期
+            </summary>
+        </member>
+        <member name="F:ActivityTable.Day">
+            <summary>
+             开启的具体天数
+            </summary>
+        </member>
+        <member name="F:ActivityTable.Weekday">
+            <summary>
+            每月第几周星期几
+            </summary>
+        </member>
+        <member name="F:ActivityTable.Interval">
+            <summary>
+            活动周期
+            </summary>
+        </member>
+        <member name="F:ActivityTable.StartTime">
+            <summary>
+            活动开始时间
+            </summary>
+        </member>
+        <member name="F:ActivityTable.Duration">
+            <summary>
+            持续时间
+            </summary>
+        </member>
+        <member name="F:ActivityTable.EnterDuration">
+            <summary>
+            入口持续时间
+            </summary>
+        </member>
+        <member name="F:ActivityTable.Count">
+            <summary>
+            完成次数
+            </summary>
+        </member>
+        <member name="F:ActivityTable.Desc">
+            <summary>
+            活动描述
+            </summary>
+        </member>
+        <member name="F:ActivityTable.RewardDesc">
+            <summary>
+            实际奖励
+            </summary>
+        </member>
+        <member name="F:ActivityTable.Remind">
+            <summary>
+            是否开启提醒
+            </summary>
+        </member>
+        <member name="F:ActivityTable.Announce">
+            <summary>
+            是否公告
+            </summary>
+        </member>
+        <member name="F:ActivityTable.ActivityIcon">
+            <summary>
+            活动界面显示ICON
+            </summary>
+        </member>
+        <member name="F:ActivityTable.ActivityZiti">
+            <summary>
+            活动字体
+            </summary>
+        </member>
+        <member name="F:ActivityTable.QuoteEvent">
+            <summary>
+            事件引用
+            </summary>
+        </member>
+        <member name="F:ActorAttributeTable.ID">
+            <summary>
+            索引
+            </summary>
+        </member>
+        <member name="F:ActorAttributeTable.Lv">
+            <summary>
+            等级
+            </summary>
+        </member>
+        <member name="F:ActorAttributeTable.MaxHP">
+            <summary>
+            生命
+            </summary>
+        </member>
+        <member name="F:ActorAttributeTable.MaxMP">
+            <summary>
+            法力
+            </summary>
+        </member>
+        <member name="F:ActorAttributeTable.AttackDamage">
+            <summary>
+            物理攻击
+            </summary>
+        </member>
+        <member name="F:ActorAttributeTable.AttackPower">
+            <summary>
+            法术攻击
+            </summary>
+        </member>
+        <member name="F:ActorAttributeTable.DefenseDamage">
+            <summary>
+            物理防御
+            </summary>
+        </member>
+        <member name="F:ActorAttributeTable.DefensePower">
+            <summary>
+            法术防御
+            </summary>
+        </member>
+        <member name="F:ActorAttributeTable.PenetrateDamage">
+            <summary>
+            物理穿透
+            </summary>
+        </member>
+        <member name="F:ActorAttributeTable.PenetratePower">
+            <summary>
+            法术穿透
+            </summary>
+        </member>
+        <member name="F:ActorAttributeTable.BloodDamage">
+            <summary>
+            物理吸血
+            </summary>
+        </member>
+        <member name="F:ActorAttributeTable.BloodPower">
+            <summary>
+            法术吸血
+            </summary>
+        </member>
+        <member name="F:ActorAttributeTable.Critical">
+            <summary>
+            暴击
+            </summary>
+        </member>
+        <member name="F:ActorAttributeTable.CriticalDamage">
+            <summary>
+            暴击伤害
+            </summary>
+        </member>
+        <member name="F:ActorAttributeTable.CriticalRes">
+            <summary>
+            暴击抵抗
+            </summary>
+        </member>
+        <member name="F:ActorAttributeTable.HPRegen">
+            <summary>
+            生命回复
+            </summary>
+        </member>
+        <member name="F:ActorAttributeTable.MPRegen">
+            <summary>
+            法力回复
+            </summary>
+        </member>
+        <member name="F:ActorAttributeTable.Ductility">
+            <summary>
+            韧性
+            </summary>
+        </member>
+        <member name="F:ActorAttributeTable.MoveSpeed">
+            <summary>
+            移动速度
+            </summary>
+        </member>
+        <member name="F:ActorAttributeTable.CoolingReduction">
+            <summary>
+            冷却缩减
+            </summary>
+        </member>
+        <member name="F:ActorAttributeTable.DamageAdd">
+            <summary>
+            伤害加成
+            </summary>
+        </member>
+        <member name="F:ActorAttributeTable.DamageDf">
+            <summary>
+            伤害减免
+            </summary>
+        </member>
+        <member name="F:ActorAttributeTable.MonsterDamageAdd">
+            <summary>
+            怪物伤害加成
+            </summary>
+        </member>
+        <member name="F:ActorAttributeTable.MonsterDamageDf">
+            <summary>
+            怪物伤害减免
+            </summary>
+        </member>
+        <member name="F:ActorAttributeTable.MonsterGoldAdd">
+            <summary>
+            怪物金币加成
+            </summary>
+        </member>
+        <member name="F:ActorAttributeTable.MonsterExpAdd">
+            <summary>
+            怪物经验加成
+            </summary>
+        </member>
+        <member name="F:ActorAttributeTable.ActivityGoldAdd">
+            <summary>
+            活动金币加成
+            </summary>
+        </member>
+        <member name="F:ActorAttributeTable.ActivityExpAdd">
+            <summary>
+            活动经验加成
+            </summary>
+        </member>
+        <member name="F:ActorLevelTable.ID">
+            <summary>
+            索引
+            </summary>
+        </member>
+        <member name="F:ActorLevelTable.NeedExp">
+            <summary>
+            升级经验
+            </summary>
+        </member>
+        <member name="F:ActorLevelTable.MaxExp">
+            <summary>
+            最大经验
+            </summary>
+        </member>
+        <member name="F:ActorTable.ID">
+            <summary>
+            索引
+            </summary>
+        </member>
+        <member name="F:ActorTable.Open">
+            <summary>
+            现在是否开放
+            </summary>
+        </member>
+        <member name="F:ActorTable.Profession">
+            <summary>
+            职业
+            </summary>
+        </member>
+        <member name="F:ActorTable.ProfessionName">
+            <summary>
+            职业名称
+            </summary>
+        </member>
+        <member name="F:ActorTable.Race">
+            <summary>
+            种族
+            </summary>
+        </member>
+        <member name="F:ActorTable.RaceName">
+            <summary>
+            种族名称
+            </summary>
+        </member>
+        <member name="F:ActorTable.Sex">
+            <summary>
+            性别
+            </summary>
+        </member>
+        <member name="F:ActorTable.CharaIcon">
+            <summary>
+            角色职业图标
+            </summary>
+        </member>
+        <member name="F:ActorTable.Feature">
+            <summary>
+            职业特色描述
+            </summary>
+        </member>
+        <member name="F:ActorTable.Name1">
+            <summary>
+            随机名字库姓
+            </summary>
+        </member>
+        <member name="F:ActorTable.Name2">
+            <summary>
+            随即名字库名
+            </summary>
+        </member>
+        <member name="F:ActorTable.Weapon">
+            <summary>
+            武器
+            </summary>
+        </member>
+        <member name="F:ActorTable.ResId">
+            <summary>
+            初始外观
+            </summary>
+        </member>
+        <member name="F:ActorTable.DisplayAction">
+            <summary>
+            展示动作
+            </summary>
+        </member>
+        <member name="F:ActorTable.MainLanguage">
+            <summary>
+            对应音效
+            </summary>
+        </member>
+        <member name="F:ActorTable.Skill">
+            <summary>
+            主动技能
+            </summary>
+        </member>
+        <member name="F:ActorTable.InitialHead">
+            <summary>
+            角色初始头像
+            </summary>
+        </member>
+        <member name="F:ActorTable.MapId">
+            <summary>
+            初始出生地图
+            </summary>
+        </member>
+        <member name="F:AirWallTable.ID">
+            <summary>
+            索引
+            </summary>
+        </member>
+        <member name="F:AirWallTable.Map">
+            <summary>
+            地图
+            </summary>
+        </member>
+        <member name="F:AirWallTable.Xyz">
+            <summary>
+            物体所在位置
+            </summary>
+        </member>
+        <member name="F:AirWallTable.Angle">
+            <summary>
+            物体角度
+            </summary>
+        </member>
+        <member name="F:AirWallTable.ResId">
+            <summary>
+            模型资源
+            </summary>
+        </member>
+        <member name="F:AppearanceTable.ID">
+            <summary>
+            外观ID
+            </summary>
+        </member>
+        <member name="F:AppearanceTable.AppearanceRes">
+            <summary>
+            对应外观
+            </summary>
+        </member>
+        <member name="F:AppearanceTable.Skin">
+            <summary>
+            是否有蒙皮信息
+            </summary>
+        </member>
+        <member name="F:AttributeTypeTable.ID">
+            <summary>
+            ID
+            </summary>
+        </member>
+        <member name="F:AttributeTypeTable.Effect">
+            <summary>
+            属性名称
+            </summary>
+        </member>
+        <member name="F:AttributeTypeTable.FightRatio">
+            <summary>
+            战力系数
+            </summary>
+        </member>
+        <member name="F:AttributeTypeTable.Interface">
+            <summary>
+            界面显示
+            </summary>
+        </member>
+        <member name="F:AttributeTypeTable.Dec">
+            <summary>
+            属性描述
+            </summary>
+        </member>
+        <member name="F:AttributeTypeTable.Xianshi">
+            <summary>
+            显示
+            </summary>
+        </member>
+        <member name="F:AttributeTypeTable.upperlimit">
+            <summary>
+            属性生效上限
+            </summary>
+        </member>
+        <member name="F:AwardTable.ID">
+            <summary>
+            ID索引
+            </summary>
+        </member>
+        <member name="F:AwardTable.Award">
+            <summary>
+            奖励内容
+            </summary>
+        </member>
+        <member name="F:BagTable.ID">
+            <summary>
+            背包格子ID
+            </summary>
+        </member>
+        <member name="F:BagTable.OpenLevel">
+            <summary>
+            开启等级
+            </summary>
+        </member>
+        <member name="F:BagTable.Consume">
+            <summary>
+            开启消耗
+            </summary>
+        </member>
+        <member name="F:BannedWordTable.ID">
+            <summary>
+            索引
+            </summary>
+        </member>
+        <member name="F:BannedWordTable.Word">
+            <summary>
+            中文
+            </summary>
+        </member>
+        <member name="F:BannedWordTable.Type">
+            <summary>
+            过滤类型
+            </summary>
+        </member>
+        <member name="F:BaseAiTable.BaseID">
+            <summary>
+            索引
+            </summary>
+        </member>
+        <member name="F:BaseAiTable.Response">
+            <summary>
+            AI响应时间系数
+            </summary>
+        </member>
+        <member name="F:BaseAiTable.ActiveAttackRange">
+            <summary>
+            警戒范围
+            </summary>
+        </member>
+        <member name="F:BaseAiTable.TargetType">
+            <summary>
+            搜索目标类型
+            </summary>
+        </member>
+        <member name="F:BaseAiTable.Callpartner">
+            <summary>
+            呼叫同伴范围
+            </summary>
+        </member>
+        <member name="F:BaseAiTable.Fight">
+            <summary>
+            是否还击
+            </summary>
+        </member>
+        <member name="F:BaseAiTable.ChaseRange">
+            <summary>
+            追击范围
+            </summary>
+        </member>
+        <member name="F:BaseAiTable.Reset">
+            <summary>
+            是否回到出生点
+            </summary>
+        </member>
+        <member name="F:BaseAiTable.Invincible">
+            <summary>
+            追击返回是否无敌
+            </summary>
+        </member>
+        <member name="F:BaseAiTable.RecoverHp">
+            <summary>
+            脱战回血
+            </summary>
+        </member>
+        <member name="F:BaseAiTable.ActMode">
+            <summary>
+            活动方式
+            </summary>
+        </member>
+        <member name="F:BaseAiTable.Follow">
+            <summary>
+            跟随
+            </summary>
+        </member>
+        <member name="F:BattleTable.ID">
+            <summary>
+            ID索引
+            </summary>
+        </member>
+        <member name="F:BattleTable.Award">
+            <summary>
+            胜负奖励
+            </summary>
+        </member>
+        <member name="F:BattleTable.Attenuation">
+            <summary>
+            奖励衰减
+            </summary>
+        </member>
+        <member name="F:BossTable.ID">
+            <summary>
+            Boss的ID
+            </summary>
+        </member>
+        <member name="F:BossTable.Level">
+            <summary>
+            BOSS所属等级段
+            </summary>
+        </member>
+        <member name="F:BossTable.Type">
+            <summary>
+            BOSS分类
+            </summary>
+        </member>
+        <member name="F:BossTable.Name">
+            <summary>
+            BOSS名称
+            </summary>
+        </member>
+        <member name="F:BossTable.Bg">
+            <summary>
+            BOSS背景资源
+            </summary>
+        </member>
+        <member name="F:BossTable.Consume">
+            <summary>
+            击杀奖励预览
+            </summary>
+        </member>
+        <member name="F:BossTable.Award">
+            <summary>
+            击杀奖励
+            </summary>
+        </member>
+        <member name="F:BossTable.Mail">
+            <summary>
+            击杀奖励邮件
+            </summary>
+        </member>
+        <member name="F:BossTable.Award1">
+            <summary>
+            排名奖励
+            </summary>
+        </member>
+        <member name="F:BossTable.Mail1">
+            <summary>
+            排名奖励邮件
+            </summary>
+        </member>
+        <member name="F:BossTable.Award2">
+            <summary>
+            参与奖励
+            </summary>
+        </member>
+        <member name="F:BossTable.Mail2">
+            <summary>
+            参与邮件
+            </summary>
+        </member>
+        <member name="F:BossTable.Action">
+            <summary>
+            界面动作
+            </summary>
+        </member>
+        <member name="F:BoyNameTable.ID">
+            <summary>
+            序号
+            </summary>
+        </member>
+        <member name="F:BoyNameTable.Sur">
+            <summary>
+            姓
+            </summary>
+        </member>
+        <member name="F:BuffTable.ID">
+            <summary>
+            buff的ID
+            </summary>
+        </member>
+        <member name="F:BuffTable.Name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="F:BuffTable.Describe">
+            <summary>
+            描述
+            </summary>
+        </member>
+        <member name="F:BuffTable.Gain">
+            <summary>
+            是否增益
+            </summary>
+        </member>
+        <member name="F:BuffTable.ShareType">
+            <summary>
+            类型
+            </summary>
+        </member>
+        <member name="F:BuffTable.BuffTriggerType">
+            <summary>
+            类型
+            </summary>
+        </member>
+        <member name="F:BuffTable.OverlayWay">
+            <summary>
+            叠加方式
+            </summary>
+        </member>
+        <member name="F:BuffTable.Number">
+            <summary>
+            可叠加层数
+            </summary>
+        </member>
+        <member name="F:BuffTable.Mutual">
+            <summary>
+            互斥
+            </summary>
+        </member>
+        <member name="F:BuffTable.DelayTime">
+            <summary>
+            延迟时间（毫秒）
+            </summary>
+        </member>
+        <member name="F:BuffTable.ContinueTime">
+            <summary>
+            持续时间（毫秒）
+            </summary>
+        </member>
+        <member name="F:BuffTable.IntervalTime">
+            <summary>
+            间隔时间（毫秒）
+            </summary>
+        </member>
+        <member name="F:BuffTable.TriggerProbability">
+            <summary>
+            触发概率（万分率）
+            </summary>
+        </member>
+        <member name="F:BuffTable.Delete">
+            <summary>
+            删除机制
+            </summary>
+        </member>
+        <member name="F:BuffTable.Order">
+            <summary>
+            显示顺序
+            </summary>
+        </member>
+        <member name="F:BuffTable.Broadcast">
+            <summary>
+            是否显示BUFF图标
+            </summary>
+        </member>
+        <member name="F:BuffTable.Icon">
+            <summary>
+            buff图标
+            </summary>
+        </member>
+        <member name="F:BuffTable.effect">
+            <summary>
+            buff特效
+            </summary>
+        </member>
+        <member name="F:BuffTable.SpecialResultId">
+            <summary>
+            动作效果ID
+            </summary>
+        </member>
+        <member name="F:BuffTable.ResultId">
+            <summary>
+            属性参数
+            </summary>
+        </member>
+        <member name="F:BuffTable.ResultType">
+            <summary>
+            特殊效果类型
+            </summary>
+        </member>
+        <member name="F:CardSuitTable.ID">
+            <summary>
+            套装等级
+            </summary>
+        </member>
+        <member name="F:CardSuitTable.Name">
+            <summary>
+            套装名称
+            </summary>
+        </member>
+        <member name="F:CardSuitTable.Condition">
+            <summary>
+            条件
+            </summary>
+        </member>
+        <member name="F:CardSuitTable.Attr">
+            <summary>
+            属性
+            </summary>
+        </member>
+        <member name="F:CardTable.ID">
+            <summary>
+            ID
+            </summary>
+        </member>
+        <member name="F:CardTable.Name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="F:CardTable.ShortDescribe">
+            <summary>
+            卡片描述
+            </summary>
+        </member>
+        <member name="F:CardTable.SkillShortDes">
+            <summary>
+            技能1描述
+            </summary>
+        </member>
+        <member name="F:CardTable.Similar">
+            <summary>
+            同类
+            </summary>
+        </member>
+        <member name="F:CardTable.CardLevel">
+            <summary>
+            卡片星级
+            </summary>
+        </member>
+        <member name="F:CardTable.CardQuality">
+            <summary>
+            品质
+            </summary>
+        </member>
+        <member name="F:CardTable.CardBasic">
+            <summary>
+            基础属性
+            </summary>
+        </member>
+        <member name="F:CardTable.BasicInc">
+            <summary>
+            基础属性增量
+            </summary>
+        </member>
+        <member name="F:CardTable.CardSkill">
+            <summary>
+            助战技能1
+            </summary>
+        </member>
+        <member name="F:CardTable.SkillInc">
+            <summary>
+            助战技能1增量
+            </summary>
+        </member>
+        <member name="F:CardTable.SkillOpen">
+            <summary>
+            技能1开启星级
+            </summary>
+        </member>
+        <member name="F:CardTable.SkillDes">
+            <summary>
+            技能1描述
+            </summary>
+        </member>
+        <member name="F:CardTable.CardSkillTwo">
+            <summary>
+            助战技能2
+            </summary>
+        </member>
+        <member name="F:CardTable.SkillIncTwo">
+            <summary>
+            助战技能2增量
+            </summary>
+        </member>
+        <member name="F:CardTable.SkillTwoOpen">
+            <summary>
+            技能2开启星级
+            </summary>
+        </member>
+        <member name="F:CardTable.SkillTwoDes">
+            <summary>
+            技能2描述
+            </summary>
+        </member>
+        <member name="F:CardTable.ExcDebris">
+            <summary>
+            专属碎片
+            </summary>
+        </member>
+        <member name="F:CardTable.Total">
+            <summary>
+            升级总数
+            </summary>
+        </member>
+        <member name="F:CardTable.Number">
+            <summary>
+            升级条件
+            </summary>
+        </member>
+        <member name="F:CardTable.NextID">
+            <summary>
+            升级卡片
+            </summary>
+        </member>
+        <member name="F:CardTable.HeadIcon">
+            <summary>
+            头像icon
+            </summary>
+        </member>
+        <member name="F:CardTable.BodyIcon">
+            <summary>
+            半身图
+            </summary>
+        </member>
+        <member name="F:CollisionTable.ID">
+            <summary>
+            碰撞ID
+            </summary>
+        </member>
+        <member name="F:CollisionTable.Delay">
+            <summary>
+            起效时间
+            </summary>
+        </member>
+        <member name="F:CollisionTable.DamgeTime">
+             <summary>
+             单次伤害
+            持续时间
+             </summary>
+        </member>
+        <member name="F:CollisionTable.Degree">
+            <summary>
+            攻击次数
+            </summary>
+        </member>
+        <member name="F:CollisionTable.Interval">
+            <summary>
+            攻击间隔
+            </summary>
+        </member>
+        <member name="F:CollisionTable.SearchTarget">
+            <summary>
+            搜索目标
+            </summary>
+        </member>
+        <member name="F:CollisionTable.Scope">
+            <summary>
+            范围
+            </summary>
+        </member>
+        <member name="F:CollisionTable.SearchMode">
+            <summary>
+            搜索方式
+            </summary>
+        </member>
+        <member name="F:CollisionTable.count">
+            <summary>
+            目标数量
+            </summary>
+        </member>
+        <member name="F:CollisionTable.HitEffect">
+            <summary>
+            受击特效
+            </summary>
+        </member>
+        <member name="F:CollisionTable.HitSound">
+            <summary>
+            命中音效
+            </summary>
+        </member>
+        <member name="F:CollisionTable.SelfBuffId">
+            <summary>
+            自己BUFF
+            </summary>
+        </member>
+        <member name="F:CollisionTable.FriendBuffId">
+            <summary>
+            友方BUFF
+            </summary>
+        </member>
+        <member name="F:CollisionTable.EnemyBuffId">
+            <summary>
+            敌方BUFF
+            </summary>
+        </member>
+        <member name="F:CollisionTable.SelfHurtID">
+            <summary>
+            自己伤害
+            </summary>
+        </member>
+        <member name="F:CollisionTable.FriendHurtID">
+            <summary>
+            友方伤害
+            </summary>
+        </member>
+        <member name="F:CollisionTable.EnemyHurtID">
+            <summary>
+            敌方伤害
+            </summary>
+        </member>
+        <member name="F:DailyRewardTable.ID">
+            <summary>
+            序号
+            </summary>
+        </member>
+        <member name="F:DailyRewardTable.Daily">
+            <summary>
+            活跃值
+            </summary>
+        </member>
+        <member name="F:DailyRewardTable.Icon">
+            <summary>
+            活跃奖励道具ICON
+            </summary>
+        </member>
+        <member name="F:DailyRewardTable.DailyReward">
+            <summary>
+            活跃奖励道具
+            </summary>
+        </member>
+        <member name="F:DailyTable.ID">
+            <summary>
+            序号
+            </summary>
+        </member>
+        <member name="F:DailyTable.Order">
+            <summary>
+            顺序
+            </summary>
+        </member>
+        <member name="F:DailyTable.Type">
+            <summary>
+            日常类型
+            </summary>
+        </member>
+        <member name="F:DailyTable.ConditionDesc">
+            <summary>
+            名称等级描述
+            </summary>
+        </member>
+        <member name="F:DailyTable.Lvl">
+            <summary>
+            开启等级
+            </summary>
+        </member>
+        <member name="F:DailyTable.Count">
+            <summary>
+            需要完成次数
+            </summary>
+        </member>
+        <member name="F:DailyTable.PlayerDaily">
+            <summary>
+            玩家活力值奖励
+            </summary>
+        </member>
+        <member name="F:DailyTable.ICON">
+            <summary>
+            活动ICON
+            </summary>
+        </member>
+        <member name="F:DailyTable.Tips">
+            <summary>
+            活动小标签
+            </summary>
+        </member>
+        <member name="F:DailyTable.GameDesc">
+            <summary>
+            玩法描述
+            </summary>
+        </member>
+        <member name="F:DailyTable.Reward">
+            <summary>
+            奖励展示
+            </summary>
+        </member>
+        <member name="F:DailyTable.ReceiveReward">
+            <summary>
+            领取奖励
+            </summary>
+        </member>
+        <member name="F:DailyTable.Entrance">
+            <summary>
+            入口
+            </summary>
+        </member>
+        <member name="F:DisplacementTable.ID">
+            <summary>
+            索引
+            </summary>
+        </member>
+        <member name="F:DisplacementTable.Move">
+            <summary>
+            能否移动
+            </summary>
+        </member>
+        <member name="F:DisplacementTable.MoveWay">
+            <summary>
+            移动方式
+            </summary>
+        </member>
+        <member name="F:DisplacementTable.KnockTarget">
+            <summary>
+            碰到目标
+            </summary>
+        </member>
+        <member name="F:DisplacementTable.Position">
+            <summary>
+            移动位置
+            </summary>
+        </member>
+        <member name="F:DisplacementTable.TargetDistance">
+            <summary>
+            距离
+            </summary>
+        </member>
+        <member name="F:DisplacementTable.DeTime">
+            <summary>
+            移动延迟时间
+            </summary>
+        </member>
+        <member name="F:DisplacementTable.Speed">
+            <summary>
+            移动速度
+            </summary>
+        </member>
+        <member name="F:DisplacementTable.MaxDistance">
+            <summary>
+            移动最大距离
+            </summary>
+        </member>
+        <member name="F:DonateAward.ID">
+            <summary>
+            ID索引
+            </summary>
+        </member>
+        <member name="F:DonateAward.Plan">
+            <summary>
+            需求捐献进度
+            </summary>
+        </member>
+        <member name="F:DonateAward.Award">
+            <summary>
+            奖励内容
+            </summary>
+        </member>
+        <member name="F:DonateTable.ID">
+            <summary>
+            捐献类型ID
+            </summary>
+        </member>
+        <member name="F:DonateTable.Expend">
+            <summary>
+            单次捐献消耗
+            </summary>
+        </member>
+        <member name="F:DonateTable.FactionFund">
+            <summary>
+            获得帮会资金
+            </summary>
+        </member>
+        <member name="F:DonateTable.Contribute">
+            <summary>
+            获得帮会贡献
+            </summary>
+        </member>
+        <member name="F:DonateTable.Plan">
+            <summary>
+            获得捐献进度
+            </summary>
+        </member>
+        <member name="F:DropGroupTable.ID">
+            <summary>
+            掉落组ID
+            </summary>
+        </member>
+        <member name="F:DropGroupTable.Job">
+            <summary>
+            职业
+            </summary>
+        </member>
+        <member name="F:DropGroupTable.Sex">
+            <summary>
+            性别
+            </summary>
+        </member>
+        <member name="F:DropGroupTable.LevelDown">
+            <summary>
+            等级下限
+            </summary>
+        </member>
+        <member name="F:DropGroupTable.LevelUp">
+            <summary>
+            等级上限
+            </summary>
+        </member>
+        <member name="F:DropGroupTable.TaskID">
+            <summary>
+            任务ID
+            </summary>
+        </member>
+        <member name="F:DropGroupTable.Probability">
+            <summary>
+            掉落概率
+            </summary>
+        </member>
+        <member name="F:DropGroupTable.DropID">
+            <summary>
+            掉落ID
+            </summary>
+        </member>
+        <member name="F:DropGroupTable.NumberMin">
+            <summary>
+            次数最小值
+            </summary>
+        </member>
+        <member name="F:DropGroupTable.NumMax">
+            <summary>
+            次数最大值
+            </summary>
+        </member>
+        <member name="F:DropGroupTable.NumLimit">
+            <summary>
+            次数上限
+            </summary>
+        </member>
+        <member name="F:DropTable.ID">
+            <summary>
+            掉落ID
+            </summary>
+        </member>
+        <member name="F:DropTable.Probability">
+            <summary>
+            掉落概率
+            </summary>
+        </member>
+        <member name="F:DropTable.ItemID">
+            <summary>
+            物品ID
+            </summary>
+        </member>
+        <member name="F:DropTable.NumMin">
+            <summary>
+            最小值
+            </summary>
+        </member>
+        <member name="F:DropTable.NumMax">
+            <summary>
+            最大值
+            </summary>
+        </member>
+        <member name="F:DropTable.TimeLimit">
+            <summary>
+            时限类型
+            </summary>
+        </member>
+        <member name="F:DungeoneventTable.ID">
+            <summary>
+            主键
+            </summary>
+        </member>
+        <member name="F:DungeoneventTable.StepDesc">
+            <summary>
+            阶段描述
+            </summary>
+        </member>
+        <member name="F:DungeoneventTable.TriggerType">
+            <summary>
+            触发类型
+            </summary>
+        </member>
+        <member name="F:DungeoneventTable.TriggerParam">
+            <summary>
+            触发参数
+            </summary>
+        </member>
+        <member name="F:DungeoneventTable.EventType">
+            <summary>
+            事件类型
+            </summary>
+        </member>
+        <member name="F:DungeoneventTable.Delay">
+            <summary>
+            延迟时间(毫秒)
+            </summary>
+        </member>
+        <member name="F:DungeoneventTable.Effect">
+            <summary>
+            事件相关参数
+            </summary>
+        </member>
+        <member name="F:DungeoneventTable.Repeat">
+            <summary>
+            重复次数
+            </summary>
+        </member>
+        <member name="F:DungeoneventTable.Interval">
+            <summary>
+            事件重复时间间隔（毫秒）
+            </summary>
+        </member>
+        <member name="F:DungeoneventTable.AddEvent">
+            <summary>
+            结束之后添加事件
+            </summary>
+        </member>
+        <member name="F:DungeoneventTable.Dialog">
+            <summary>
+            飘字
+            </summary>
+        </member>
+        <member name="F:DungeonTable.ID">
+            <summary>
+            副本id
+            </summary>
+        </member>
+        <member name="F:DungeonTable.DungeonName">
+            <summary>
+            副本名称
+            </summary>
+        </member>
+        <member name="F:DungeonTable.QuitRegion">
+            <summary>
+            退出区域
+            </summary>
+        </member>
+        <member name="F:DungeonTable.FuncType">
+            <summary>
+            功能类型
+            </summary>
+        </member>
+        <member name="F:DungeonTable.Extend">
+            <summary>
+            扩展参数
+            </summary>
+        </member>
+        <member name="F:DungeonTable.DengeonTime">
+            <summary>
+            副本时间
+            </summary>
+        </member>
+        <member name="F:DungeonTable.Number">
+            <summary>
+            进入人数
+            </summary>
+        </member>
+        <member name="F:DungeonTable.OpenDays">
+            <summary>
+            开放日期
+            </summary>
+        </member>
+        <member name="F:DungeonTable.OpenTime">
+            <summary>
+            开放时间
+            </summary>
+        </member>
+        <member name="F:DungeonTable.Count">
+            <summary>
+            次数
+            </summary>
+        </member>
+        <member name="F:DungeonTable.Consume">
+            <summary>
+            进入消耗
+            </summary>
+        </member>
+        <member name="F:DungeonTable.Reward">
+            <summary>
+            通关奖励
+            </summary>
+        </member>
+        <member name="F:DungeonTable.Description">
+            <summary>
+            副本描述
+            </summary>
+        </member>
+        <member name="F:DungeonTable.QuoteEvent">
+            <summary>
+            事件引用
+            </summary>
+        </member>
+        <member name="F:EffectDataTable.ID">
+            <summary>
+            索引
+            </summary>
+        </member>
+        <member name="F:EffectDataTable.Path">
+            <summary>
+            对应特效
+            </summary>
+        </member>
+        <member name="F:EffectDataTable.Type">
+            <summary>
+            特效类型
+            </summary>
+        </member>
+        <member name="F:EffectDataTable.Move">
+            <summary>
+            特效绑定
+            </summary>
+        </member>
+        <member name="F:EffectDataTable.SpecialDelay">
+            <summary>
+            特效延迟
+            </summary>
+        </member>
+        <member name="F:EffectDataTable.Time">
+            <summary>
+            存活时间
+            </summary>
+        </member>
+        <member name="F:EffectDataTable.Position">
+            <summary>
+            偏移X,Y,Z
+            </summary>
+        </member>
+        <member name="F:EquipBaptizeTable.ID">
+            <summary>
+            索引
+            </summary>
+        </member>
+        <member name="F:EquipBaptizeTable.MinLevel">
+            <summary>
+            最小等级
+            </summary>
+        </member>
+        <member name="F:EquipBaptizeTable.MaxLevel">
+            <summary>
+            最大等级
+            </summary>
+        </member>
+        <member name="F:EquipBaptizeTable.Silver">
+            <summary>
+            银币消耗
+            </summary>
+        </member>
+        <member name="F:EquipBaptizeTable.Item">
+            <summary>
+            物品消耗
+            </summary>
+        </member>
+        <member name="F:EquipBaptizeTable.MinAttr">
+            <summary>
+            属性浮动最小值
+            </summary>
+        </member>
+        <member name="F:EquipBaptizeTable.MaxAttr">
+            <summary>
+            属性浮动最大值
+            </summary>
+        </member>
+        <member name="F:EquipForgeTable.ID">
+            <summary>
+            索引
+            </summary>
+        </member>
+        <member name="F:EquipForgeTable.Job">
+            <summary>
+            职业大类
+            </summary>
+        </member>
+        <member name="F:EquipForgeTable.Level">
+            <summary>
+            等级小类
+            </summary>
+        </member>
+        <member name="F:EquipForgeTable.Patr">
+            <summary>
+            打造部位
+            </summary>
+        </member>
+        <member name="F:EquipForgeTable.Icon">
+            <summary>
+            界面显示icon
+            </summary>
+        </member>
+        <member name="F:EquipForgeTable.Des">
+            <summary>
+            打造装备描述
+            </summary>
+        </member>
+        <member name="F:EquipForgeTable.Consume">
+            <summary>
+            打造银币消耗
+            </summary>
+        </member>
+        <member name="F:EquipForgeTable.LowForge">
+            <summary>
+            普通打造材料
+            </summary>
+        </member>
+        <member name="F:EquipForgeTable.LowEquip">
+            <summary>
+            普通打造产出
+            </summary>
+        </member>
+        <member name="F:EquipForgeTable.LoudhighForge">
+            <summary>
+            强化打造附加材料
+            </summary>
+        </member>
+        <member name="F:EquipForgeTable.LoudhighEquip">
+            <summary>
+            强化打造产出
+            </summary>
+        </member>
+        <member name="F:EquipForgeTable.Wish">
+            <summary>
+            祝福值上限
+            </summary>
+        </member>
+        <member name="F:EquipForgeTable.Once">
+            <summary>
+            单次打造获得祝福值
+            </summary>
+        </member>
+        <member name="F:EquipRecastTable.ID">
+            <summary>
+            索引
+            </summary>
+        </member>
+        <member name="F:EquipRecastTable.MinLevel">
+            <summary>
+            最小等级
+            </summary>
+        </member>
+        <member name="F:EquipRecastTable.MaxLevel">
+            <summary>
+            最大等级
+            </summary>
+        </member>
+        <member name="F:EquipRecastTable.Silver">
+            <summary>
+            普通重铸银币消耗
+            </summary>
+        </member>
+        <member name="F:EquipRecastTable.Item">
+            <summary>
+            普通重铸物品消耗
+            </summary>
+        </member>
+        <member name="F:EquipRecastTable.MinAttr">
+            <summary>
+            普通重铸属性浮动最小值
+            </summary>
+        </member>
+        <member name="F:EquipRecastTable.MaxAttr">
+            <summary>
+            普通重铸属性浮动最大值
+            </summary>
+        </member>
+        <member name="F:EquipRecastTable.Lock">
+            <summary>
+            可加锁属性条数
+            </summary>
+        </member>
+        <member name="F:EquipRecastTable.ExpertSilver">
+            <summary>
+            高级重铸银币消耗
+            </summary>
+        </member>
+        <member name="F:EquipRecastTable.ExpertItem">
+            <summary>
+            高级重铸物品消耗
+            </summary>
+        </member>
+        <member name="F:EquipRecastTable.ExpertMinAttr">
+            <summary>
+            高级重铸属性浮动最小值
+            </summary>
+        </member>
+        <member name="F:EquipRecastTable.ExpertMaxAttr">
+            <summary>
+            高级重铸属性浮动最大值
+            </summary>
+        </member>
+        <member name="F:EquipRecastTable.ExpertLock">
+            <summary>
+            高级重铸可加锁属性条数
+            </summary>
+        </member>
+        <member name="F:EquipSuitTable.ID">
+            <summary>
+            套装ID
+            </summary>
+        </member>
+        <member name="F:EquipSuitTable.SuitName">
+            <summary>
+            套装名称
+            </summary>
+        </member>
+        <member name="F:EquipSuitTable.Part">
+            <summary>
+            套装需要部位
+            </summary>
+        </member>
+        <member name="F:EquipSuitTable.Count">
+            <summary>
+            穿戴件数
+            </summary>
+        </member>
+        <member name="F:EquipSuitTable.SuitAttr">
+            <summary>
+            件数套装属性
+            </summary>
+        </member>
+        <member name="F:EquipSuitTable.Count1">
+            <summary>
+            穿戴件数1
+            </summary>
+        </member>
+        <member name="F:EquipSuitTable.SuitAttr1">
+            <summary>
+            件数套装属性1
+            </summary>
+        </member>
+        <member name="F:EquipTable.ID">
+            <summary>
+            索引
+            </summary>
+        </member>
+        <member name="F:EquipTable.PartType">
+            <summary>
+            部位
+            </summary>
+        </member>
+        <member name="F:EquipTable.PartName">
+            <summary>
+            部位名称
+            </summary>
+        </member>
+        <member name="F:EquipTable.PrimaryAttribute">
+            <summary>
+            装备基础属性
+            </summary>
+        </member>
+        <member name="F:EquipTable.Number">
+            <summary>
+            附加属性条数
+            </summary>
+        </member>
+        <member name="F:EquipTable.AdditionAttr">
+            <summary>
+            附加属性库
+            </summary>
+        </member>
+        <member name="F:EquipTable.SuitAttr">
+            <summary>
+            是否有套装属性
+            </summary>
+        </member>
+        <member name="F:EquipTable.SuitId">
+            <summary>
+            套装ID
+            </summary>
+        </member>
+        <member name="F:FactionArchitectureTable.ID">
+            <summary>
+            ID索引
+            </summary>
+        </member>
+        <member name="F:FactionArchitectureTable.Type">
+            <summary>
+            建筑类型
+            </summary>
+        </member>
+        <member name="F:FactionArchitectureTable.Name">
+            <summary>
+            建筑名称
+            </summary>
+        </member>
+        <member name="F:FactionArchitectureTable.Des">
+            <summary>
+            建筑功能描述
+            </summary>
+        </member>
+        <member name="F:FactionArchitectureTable.Icon">
+            <summary>
+            建筑图片展示
+            </summary>
+        </member>
+        <member name="F:FactionArchitectureTable.Model">
+            <summary>
+            建筑模型展示
+            </summary>
+        </member>
+        <member name="F:FactionArchitectureTable.Level">
+            <summary>
+            等级
+            </summary>
+        </member>
+        <member name="F:FactionArchitectureTable.NextLevel">
+            <summary>
+            下一级
+            </summary>
+        </member>
+        <member name="F:FactionArchitectureTable.LevelUp">
+            <summary>
+            升级需其他建筑条件
+            </summary>
+        </member>
+        <member name="F:FactionArchitectureTable.Text">
+            <summary>
+            升级需求文字描述
+            </summary>
+        </member>
+        <member name="F:FactionArchitectureTable.LvExpend1">
+            <summary>
+            升级消耗1
+            </summary>
+        </member>
+        <member name="F:FactionArchitectureTable.LvExpend2">
+            <summary>
+            升级消耗2
+            </summary>
+        </member>
+        <member name="F:FactionArchitectureTable.Result1">
+            <summary>
+            升级效果1
+            </summary>
+        </member>
+        <member name="F:FactionArchitectureTable.Result2">
+            <summary>
+            升级效果2
+            </summary>
+        </member>
+        <member name="F:FactionArchitectureTable.Result3">
+            <summary>
+            升级效果3
+            </summary>
+        </member>
+        <member name="F:FactionArchitectureTable.Result4">
+            <summary>
+            升级效果4
+            </summary>
+        </member>
+        <member name="F:FactionArchitectureTable.Result5">
+            <summary>
+            升级效果5
+            </summary>
+        </member>
+        <member name="F:FactionPostTable.ID">
+            <summary>
+            职位ID
+            </summary>
+        </member>
+        <member name="F:FactionPostTable.Name">
+            <summary>
+            默认职位名称
+            </summary>
+        </member>
+        <member name="F:FactionPostTable.Count">
+            <summary>
+            数量
+            </summary>
+        </member>
+        <member name="F:FactionPostTable.Item">
+            <summary>
+            权限
+            </summary>
+        </member>
+        <member name="F:FactionPostTable.Icon">
+            <summary>
+            职位图标
+            </summary>
+        </member>
+        <member name="F:FashionTable.ID">
+            <summary>
+            外观ID
+            </summary>
+        </member>
+        <member name="F:FashionTable.Dye">
+            <summary>
+            是否可染色
+            </summary>
+        </member>
+        <member name="F:FashionTable.Icon">
+            <summary>
+            对应颜色ICON
+            </summary>
+        </member>
+        <member name="F:FashionTable.AppearanceRes">
+            <summary>
+            对应的外观资源
+            </summary>
+        </member>
+        <member name="F:FashionTable.ConsumeType">
+            <summary>
+            解锁消耗类型
+            </summary>
+        </member>
+        <member name="F:FashionTable.Consume">
+            <summary>
+            对应消耗参数
+            </summary>
+        </member>
+        <member name="F:FashionTable.Silver">
+            <summary>
+            染色银币消耗
+            </summary>
+        </member>
+        <member name="F:FashionTable.TimeLimit">
+            <summary>
+            时限
+            </summary>
+        </member>
+        <member name="F:FindpathTable.ID">
+            <summary>
+            地图ID
+            </summary>
+        </member>
+        <member name="F:FindpathTable.Type">
+            <summary>
+            类型
+            </summary>
+        </member>
+        <member name="F:FindpathTable.Detailed">
+            <summary>
+            详细类型
+            </summary>
+        </member>
+        <member name="F:FindpathTable.Map">
+            <summary>
+            所在地图
+            </summary>
+        </member>
+        <member name="F:FindpathTable.Xyz">
+            <summary>
+            所在地图坐标
+            </summary>
+        </member>
+        <member name="F:GameShopTable.ID">
+            <summary>
+            ID索引
+            </summary>
+        </member>
+        <member name="F:GameShopTable.Dis">
+            <summary>
+            显示划分
+            </summary>
+        </member>
+        <member name="F:GameShopTable.ShopType">
+            <summary>
+            商城类型
+            </summary>
+        </member>
+        <member name="F:GameShopTable.Currency">
+            <summary>
+            消耗货币
+            </summary>
+        </member>
+        <member name="F:GameShopTable.Level">
+            <summary>
+            开放等级
+            </summary>
+        </member>
+        <member name="F:GameShopTable.Type">
+            <summary>
+            小类分页
+            </summary>
+        </member>
+        <member name="F:GameShopTable.ItemId">
+            <summary>
+            物品ID
+            </summary>
+        </member>
+        <member name="F:GameShopTable.Count">
+            <summary>
+            出售数量
+            </summary>
+        </member>
+        <member name="F:GameShopTable.Price">
+            <summary>
+            原价
+            </summary>
+        </member>
+        <member name="F:GameShopTable.DiscountPrice">
+            <summary>
+            现价
+            </summary>
+        </member>
+        <member name="F:GameShopTable.Buy">
+            <summary>
+            限购方式
+            </summary>
+        </member>
+        <member name="F:GemPatrTable.ID">
+            <summary>
+            部位ID
+            </summary>
+        </member>
+        <member name="F:GemPatrTable.GemType">
+            <summary>
+            可镶嵌的宝石类型
+            </summary>
+        </member>
+        <member name="F:GemSuitTable.ID">
+            <summary>
+            套装等级
+            </summary>
+        </member>
+        <member name="F:GemSuitTable.Name">
+            <summary>
+            套装名称
+            </summary>
+        </member>
+        <member name="F:GemSuitTable.Condition">
+            <summary>
+            条件
+            </summary>
+        </member>
+        <member name="F:GemSuitTable.Attr">
+            <summary>
+            属性
+            </summary>
+        </member>
+        <member name="F:GemTable.ID">
+            <summary>
+            索引
+            </summary>
+        </member>
+        <member name="F:GemTable.GemType">
+            <summary>
+            宝石类型
+            </summary>
+        </member>
+        <member name="F:GemTable.GemAttr">
+            <summary>
+            宝石属性
+            </summary>
+        </member>
+        <member name="F:GemTable.LevelUp">
+            <summary>
+            升级后宝石ID
+            </summary>
+        </member>
+        <member name="F:GemTable.GemExp">
+            <summary>
+            宝石升级经验消耗
+            </summary>
+        </member>
+        <member name="F:GemTable.ResolveExp">
+            <summary>
+            吞噬获得经验
+            </summary>
+        </member>
+        <member name="F:GirlNameTable.ID">
+            <summary>
+            序号
+            </summary>
+        </member>
+        <member name="F:GirlNameTable.Sur">
+            <summary>
+            姓
+            </summary>
+        </member>
+        <member name="F:GuideGroupTable.ID">
+            <summary>
+            ID索引
+            </summary>
+        </member>
+        <member name="F:GuideGroupTable.Name">
+            <summary>
+            引导名称
+            </summary>
+        </member>
+        <member name="F:GuideGroupTable.Condition">
+            <summary>
+            触发条件
+            </summary>
+        </member>
+        <member name="F:GuideGroupTable.Inc">
+            <summary>
+            触发的具体事件及参数
+            </summary>
+        </member>
+        <member name="F:GuideGroupTable.GuideTableID">
+            <summary>
+            具体引导群
+            </summary>
+        </member>
+        <member name="F:GuideGroupTable.Circulation">
+            <summary>
+            是否可循环引导
+            </summary>
+        </member>
+        <member name="F:GuideTable.ID">
+            <summary>
+            ID索引
+            </summary>
+        </member>
+        <member name="F:GuideTable.Place">
+            <summary>
+            引导提示位置
+            </summary>
+        </member>
+        <member name="F:GuideTable.Orientation">
+            <summary>
+            引导提示朝向
+            </summary>
+        </member>
+        <member name="F:GuideTable.Text">
+            <summary>
+            引导提示文字内容
+            </summary>
+        </member>
+        <member name="F:GuideTable.Click">
+            <summary>
+            引导点击控件
+            </summary>
+        </member>
+        <member name="F:GuideTable.ProTect">
+            <summary>
+            是否增加强制保护
+            </summary>
+        </member>
+        <member name="F:GuideTable.Clear">
+            <summary>
+            提示清除方式
+            </summary>
+        </member>
+        <member name="F:GuideTable.Effect">
+            <summary>
+            引导特效
+            </summary>
+        </member>
+        <member name="F:GuideWindTable.ID">
+            <summary>
+            ID索引
+            </summary>
+        </member>
+        <member name="F:GuideWindTable.Wind">
+            <summary>
+            窗口ID
+            </summary>
+        </member>
+        <member name="F:HintGuidelTable.ID">
+            <summary>
+            ID索引
+            </summary>
+        </member>
+        <member name="F:HintGuidelTable.Order">
+            <summary>
+            展示顺序
+            </summary>
+        </member>
+        <member name="F:HintGuidelTable.Name">
+            <summary>
+            功能名称
+            </summary>
+        </member>
+        <member name="F:HintGuidelTable.Icon">
+            <summary>
+            功能icon
+            </summary>
+        </member>
+        <member name="F:HintGuidelTable.Level">
+            <summary>
+            需求角色等级
+            </summary>
+        </member>
+        <member name="F:HintGuidelTable.Task">
+            <summary>
+            需求完成任务
+            </summary>
+        </member>
+        <member name="F:HintGuidelTable.Award">
+            <summary>
+            赠送奖励
+            </summary>
+        </member>
+        <member name="F:HintGuidelTable.Text">
+            <summary>
+            界面描述
+            </summary>
+        </member>
+        <member name="F:HintGuidelTable.Bg">
+            <summary>
+            调用背景图资源
+            </summary>
+        </member>
+        <member name="F:HintGuidelTable.Model">
+            <summary>
+            显示的模型资源
+            </summary>
+        </member>
+        <member name="F:IntensifySuitTable.ID">
+            <summary>
+            套装等级
+            </summary>
+        </member>
+        <member name="F:IntensifySuitTable.Name">
+            <summary>
+            套装名称
+            </summary>
+        </member>
+        <member name="F:IntensifySuitTable.Condition">
+            <summary>
+            条件
+            </summary>
+        </member>
+        <member name="F:IntensifySuitTable.Attr">
+            <summary>
+            属性
+            </summary>
+        </member>
+        <member name="F:IntensifyTable.ID">
+            <summary>
+            强化等级
+            </summary>
+        </member>
+        <member name="F:IntensifyTable.Probability">
+            <summary>
+            强化基础概率
+            </summary>
+        </member>
+        <member name="F:IntensifyTable.FailureAdd">
+            <summary>
+            失败附加概率
+            </summary>
+        </member>
+        <member name="F:IntensifyTable.Consume">
+            <summary>
+            强化物品消耗
+            </summary>
+        </member>
+        <member name="F:IntensifyTable.count">
+            <summary>
+            强化银币消耗
+            </summary>
+        </member>
+        <member name="F:IntensifyTable.Property">
+            <summary>
+            强化属性百分比
+            </summary>
+        </member>
+        <member name="F:IntensifyTable.AnnouncementId">
+            <summary>
+            强化公告
+            </summary>
+        </member>
+        <member name="F:ItemGiftTable.ID">
+            <summary>
+            礼包ID
+            </summary>
+        </member>
+        <member name="F:ItemGiftTable.ItemId">
+            <summary>
+            物品ID
+            </summary>
+        </member>
+        <member name="F:ItemGiftTable.Count">
+            <summary>
+            数量
+            </summary>
+        </member>
+        <member name="F:ItemGiftTable.Job">
+            <summary>
+            职业
+            </summary>
+        </member>
+        <member name="F:ItemGiftTable.Sex">
+            <summary>
+            性别
+            </summary>
+        </member>
+        <member name="F:ItemGiftTable.Weight">
+            <summary>
+            物品获得权重
+            </summary>
+        </member>
+        <member name="F:ItemGiftTable.TimeLimit">
+            <summary>
+            时限类型
+            </summary>
+        </member>
+        <member name="F:ItemTable.ID">
+            <summary>
+            索引
+            </summary>
+        </member>
+        <member name="F:ItemTable.Name">
+            <summary>
+            物品名称
+            </summary>
+        </member>
+        <member name="F:ItemTable.ItemTypeText">
+            <summary>
+            物品短描述
+            </summary>
+        </member>
+        <member name="F:ItemTable.ItemText">
+            <summary>
+            物品长描述
+            </summary>
+        </member>
+        <member name="F:ItemTable.ResId">
+            <summary>
+            物品icon
+            </summary>
+        </member>
+        <member name="F:ItemTable.ItemLevel">
+            <summary>
+            物品等级
+            </summary>
+        </member>
+        <member name="F:ItemTable.Occupation">
+            <summary>
+            职业需求
+            </summary>
+        </member>
+        <member name="F:ItemTable.ItemQuality">
+            <summary>
+            物品品质
+            </summary>
+        </member>
+        <member name="F:ItemTable.ItemType">
+            <summary>
+            物品类型
+            </summary>
+        </member>
+        <member name="F:ItemTable.ItemClassify">
+            <summary>
+            背包分页
+            </summary>
+        </member>
+        <member name="F:ItemTable.Sort">
+            <summary>
+            物品背包排序
+            </summary>
+        </member>
+        <member name="F:ItemTable.CostTime">
+            <summary>
+            物品使用读条时间
+            </summary>
+        </member>
+        <member name="F:ItemTable.UseEffect">
+            <summary>
+            使用效果
+            </summary>
+        </member>
+        <member name="F:ItemTable.Batch">
+            <summary>
+            批量使用方式
+            </summary>
+        </member>
+        <member name="F:ItemTable.UseCount">
+            <summary>
+            使用次数
+            </summary>
+        </member>
+        <member name="F:ItemTable.Remind">
+            <summary>
+            获得自动提醒使用
+            </summary>
+        </member>
+        <member name="F:ItemTable.Stackable">
+            <summary>
+            叠加上限
+            </summary>
+        </member>
+        <member name="F:ItemTable.Discard">
+            <summary>
+            是否可丢弃
+            </summary>
+        </member>
+        <member name="F:ItemTable.OtherEffect">
+            <summary>
+            附加按钮显示
+            </summary>
+        </member>
+        <member name="F:ItemTable.Sound">
+            <summary>
+            掉落音效
+            </summary>
+        </member>
+        <member name="F:ItemTable.Model">
+            <summary>
+            掉落模型
+            </summary>
+        </member>
+        <member name="F:ItemTable.QualityEffect">
+            <summary>
+            掉落品质特效
+            </summary>
+        </member>
+        <member name="F:ItemTable.Announcement">
+            <summary>
+            掉落公告
+            </summary>
+        </member>
+        <member name="F:ItemTable.Warehouse">
+            <summary>
+            能否放入仓库
+            </summary>
+        </member>
+        <member name="F:ItemTable.bind">
+            <summary>
+            是否绑定
+            </summary>
+        </member>
+        <member name="F:ItemTable.NoBindId">
+            <summary>
+            对应物品ID
+            </summary>
+        </member>
+        <member name="F:ItemTable.Intensify">
+            <summary>
+            是否来源于强化
+            </summary>
+        </member>
+        <member name="F:KillTable.ID">
+            <summary>
+            击杀数
+            </summary>
+        </member>
+        <member name="F:KillTable.Png">
+            <summary>
+            获得荣誉
+            </summary>
+        </member>
+        <member name="F:LanguageTable.ID">
+            <summary>
+            ID索引
+            </summary>
+        </member>
+        <member name="F:LanguageTable.Type">
+            <summary>
+            提示类型
+            </summary>
+        </member>
+        <member name="F:LanguageTable.Text">
+            <summary>
+            弹窗信息
+            </summary>
+        </member>
+        <member name="F:LanguageTable.Time">
+            <summary>
+            拒绝倒计时
+            </summary>
+        </member>
+        <member name="F:LanguageTable.Content">
+            <summary>
+            提示文本内容
+            </summary>
+        </member>
+        <member name="F:LanguageTable.Position">
+            <summary>
+            显示位置
+            </summary>
+        </member>
+        <member name="F:LanguageTable.Channel">
+            <summary>
+            显示频道
+            </summary>
+        </member>
+        <member name="F:MailTable.ID">
+            <summary>
+            ID索引
+            </summary>
+        </member>
+        <member name="F:MailTable.Title">
+            <summary>
+            标题
+            </summary>
+        </member>
+        <member name="F:MailTable.Content">
+            <summary>
+            内容
+            </summary>
+        </member>
+        <member name="F:MailTable.Item">
+            <summary>
+            附件携带的物品内容
+            </summary>
+        </member>
+        <member name="F:MapMonsterTable.ID">
+            <summary>
+             索引
+            </summary>
+        </member>
+        <member name="F:MapMonsterTable.Monsterid">
+            <summary>
+             怪物id
+            </summary>
+        </member>
+        <member name="F:MapMonsterTable.MapID">
+            <summary>
+            地图ID
+            </summary>
+        </member>
+        <member name="F:MapMonsterTable.xyz">
+            <summary>
+            坐标
+            </summary>
+        </member>
+        <member name="F:MapMonsterTable.range">
+            <summary>
+            范围
+            </summary>
+        </member>
+        <member name="F:MapMonsterTable.number">
+            <summary>
+            数量
+            </summary>
+        </member>
+        <member name="F:MapMonsterTable.wave">
+            <summary>
+            波次
+            </summary>
+        </member>
+        <member name="F:MapMonsterTable.angle">
+            <summary>
+            朝向
+            </summary>
+        </member>
+        <member name="F:MapMonsterTable.Patrol">
+            <summary>
+            巡逻路径
+            </summary>
+        </member>
+        <member name="F:MapMonsterTable.Camp">
+            <summary>
+            怪物阵营
+            </summary>
+        </member>
+        <member name="F:MapNpc.ID">
+            <summary>
+            索引
+            </summary>
+        </member>
+        <member name="F:MapNpc.Name">
+            <summary>
+            NPC名称
+            </summary>
+        </member>
+        <member name="F:MapNpc.FunctionName">
+            <summary>
+            NPC功能名称
+            </summary>
+        </member>
+        <member name="F:MapNpc.Title">
+            <summary>
+            NPC称号
+            </summary>
+        </member>
+        <member name="F:MapNpc.Map">
+            <summary>
+            地图
+            </summary>
+        </member>
+        <member name="F:MapNpc.xyz">
+            <summary>
+            NPC所在位置
+            </summary>
+        </member>
+        <member name="F:MapNpc.Range">
+            <summary>
+            碰撞范围
+            </summary>
+        </member>
+        <member name="F:MapNpc.Angle">
+            <summary>
+            NPC角度
+            </summary>
+        </member>
+        <member name="F:MapNpc.VisualType">
+            <summary>
+            NPC可见类型
+            </summary>
+        </member>
+        <member name="F:MapNpc.Open">
+            <summary>
+            NPC打开方式
+            </summary>
+        </member>
+        <member name="F:MapNpc.Function">
+            <summary>
+            功能类型
+            </summary>
+        </member>
+        <member name="F:MapNpc.TypeName">
+            <summary>
+            类型名称
+            </summary>
+        </member>
+        <member name="F:MapNpc.FunctionParameter">
+            <summary>
+            功能参数
+            </summary>
+        </member>
+        <member name="F:MapNpc.DefaultTalk">
+            <summary>
+            默认对白
+            </summary>
+        </member>
+        <member name="F:MapNpc.ResId">
+            <summary>
+            模型资源
+            </summary>
+        </member>
+        <member name="F:MapNpc.Bubbling">
+            <summary>
+            冒泡
+            </summary>
+        </member>
+        <member name="F:MapNpc.MapDisplay">
+            <summary>
+            小地图显示规则
+            </summary>
+        </member>
+        <member name="F:MapPlantTable.ID">
+            <summary>
+            主键
+            </summary>
+        </member>
+        <member name="F:MapPlantTable.PlantID">
+            <summary>
+            采集物ID
+            </summary>
+        </member>
+        <member name="F:MapPlantTable.Name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="F:MapPlantTable.Icon">
+            <summary>
+            头像
+            </summary>
+        </member>
+        <member name="F:MapPlantTable.Remain">
+            <summary>
+            采集耗时
+            </summary>
+        </member>
+        <member name="F:MapPlantTable.display">
+            <summary>
+            采集时显示
+            </summary>
+        </member>
+        <member name="F:MapPlantTable.Map">
+            <summary>
+            地图
+            </summary>
+        </member>
+        <member name="F:MapPlantTable.xyz">
+            <summary>
+            坐标
+            </summary>
+        </member>
+        <member name="F:MapPlantTable.ResId">
+            <summary>
+            模型编号
+            </summary>
+        </member>
+        <member name="F:MapPlantTable.Modelzoom">
+            <summary>
+             模型缩放
+            </summary>
+        </member>
+        <member name="F:MapPlantTable.angle">
+            <summary>
+            朝向
+            </summary>
+        </member>
+        <member name="F:MapPlantTable.Number">
+            <summary>
+            采集人数
+            </summary>
+        </member>
+        <member name="F:MapPlantTable.Item">
+            <summary>
+            产出道具
+            </summary>
+        </member>
+        <member name="F:MapPlantTable.Revive">
+            <summary>
+            复活时间
+            </summary>
+        </member>
+        <member name="F:MapPlantTable.Conflict">
+            <summary>
+            是否冲突
+            </summary>
+        </member>
+        <member name="F:MapPlantTable.VisualEffects">
+            <summary>
+            采集完成特效
+            </summary>
+        </member>
+        <member name="F:MapTransferTable.ID">
+            <summary>
+            ID索引
+            </summary>
+        </member>
+        <member name="F:MapTransferTable.MapId">
+            <summary>
+            起始场景
+            </summary>
+        </member>
+        <member name="F:MapTransferTable.Xyz">
+            <summary>
+            起始坐标
+            </summary>
+        </member>
+        <member name="F:MapTransferTable.FormType">
+            <summary>
+            形状类型
+            </summary>
+        </member>
+        <member name="F:MapTransferTable.Form">
+            <summary>
+            形状参数
+            </summary>
+        </member>
+        <member name="F:MapTransferTable.TeleporterEffect">
+            <summary>
+            传送特效
+            </summary>
+        </member>
+        <member name="F:MapTransferTable.EffectAngle">
+            <summary>
+            特效角度
+            </summary>
+        </member>
+        <member name="F:MapTransferTable.DelayTime">
+            <summary>
+            延迟时间
+            </summary>
+        </member>
+        <member name="F:MapTransferTable.MapRegionId">
+            <summary>
+            目标区域
+            </summary>
+        </member>
+        <member name="F:MapTransferTable.Effect">
+            <summary>
+            自身特效
+            </summary>
+        </member>
+        <member name="F:MatchingTable.ID">
+            <summary>
+            ID索引
+            </summary>
+        </member>
+        <member name="F:MatchingTable.FC">
+            <summary>
+            战斗力阶段
+            </summary>
+        </member>
+        <member name="F:MatchingTable.Parameter1">
+            <summary>
+            匹配参数1
+            </summary>
+        </member>
+        <member name="F:MatchingTable.Parameter2">
+            <summary>
+            匹配参数2
+            </summary>
+        </member>
+        <member name="F:MonsterTable.ID">
+            <summary>
+            怪物ID
+            </summary>
+        </member>
+        <member name="F:MonsterTable.Name">
+            <summary>
+            怪物名称
+            </summary>
+        </member>
+        <member name="F:MonsterTable.Type">
+            <summary>
+            怪物类别
+            </summary>
+        </member>
+        <member name="F:MonsterTable.Head">
+            <summary>
+            头像
+            </summary>
+        </member>
+        <member name="F:MonsterTable.ResId">
+            <summary>
+            模型编号
+            </summary>
+        </member>
+        <member name="F:MonsterTable.Modelzoom">
+            <summary>
+             模型缩放
+            </summary>
+        </member>
+        <member name="F:MonsterTable.BloodNum">
+            <summary>
+            血条层数
+            </summary>
+        </member>
+        <member name="F:MonsterTable.Birthrule">
+            <summary>
+            重生规则
+            </summary>
+        </member>
+        <member name="F:MonsterTable.Isshare">
+            <summary>
+            任务是否共享
+            </summary>
+        </member>
+        <member name="F:MonsterTable.SkillReleaseId">
+            <summary>
+            技能释放ID
+            </summary>
+        </member>
+        <member name="F:MonsterTable.Corpse">
+            <summary>
+            尸体时间
+            </summary>
+        </member>
+        <member name="F:MonsterTable.Revive">
+            <summary>
+            重生周期
+            </summary>
+        </member>
+        <member name="F:MonsterTable.baseAiID">
+            <summary>
+            通用AIID
+            </summary>
+        </member>
+        <member name="F:MonsterTable.MonsterLevel">
+            <summary>
+            怪物等级
+            </summary>
+        </member>
+        <member name="F:MonsterTable.BaseAttribute">
+            <summary>
+            属性组id
+            </summary>
+        </member>
+        <member name="F:MonsterTable.DropGroupID">
+            <summary>
+            掉落组ID
+            </summary>
+        </member>
+        <member name="F:MonsterTable.bubble">
+            <summary>
+            说话
+            </summary>
+        </member>
+        <member name="F:MonsterTable.frequency">
+            <summary>
+            说话频率
+            </summary>
+        </member>
+        <member name="F:MonsterTable.MapDisplay">
+            <summary>
+            小地图显示
+            </summary>
+        </member>
+        <member name="F:NewMapRegionTable.ID">
+            <summary>
+            区域ID
+            </summary>
+        </member>
+        <member name="F:NewMapRegionTable.Type">
+            <summary>
+            区域类型
+            </summary>
+        </member>
+        <member name="F:NewMapRegionTable.MapId">
+            <summary>
+            关联场景
+            </summary>
+        </member>
+        <member name="F:NewMapRegionTable.Xyz">
+            <summary>
+            中心坐标
+            </summary>
+        </member>
+        <member name="F:NewMapRegionTable.FormType">
+            <summary>
+            形状类型
+            </summary>
+        </member>
+        <member name="F:NewMapRegionTable.Form">
+            <summary>
+            形状
+            </summary>
+        </member>
+        <member name="F:NewMapTable.ID">
+            <summary>
+            地图ID
+            </summary>
+        </member>
+        <member name="F:NewMapTable.SceneName">
+            <summary>
+            地图名称
+            </summary>
+        </member>
+        <member name="F:NewMapTable.Pktype">
+            <summary>
+            PK模式
+            </summary>
+        </member>
+        <member name="F:NewMapTable.Type">
+            <summary>
+            场景类型
+            </summary>
+        </member>
+        <member name="F:NewMapTable.Level">
+            <summary>
+            进入地图等级
+            </summary>
+        </member>
+        <member name="F:NewMapTable.Point">
+            <summary>
+            出生区域
+            </summary>
+        </member>
+        <member name="F:NewMapTable.Resurgence">
+            <summary>
+            安全复活区域
+            </summary>
+        </member>
+        <member name="F:NewMapTable.ResName">
+            <summary>
+            场景资源ID
+            </summary>
+        </member>
+        <member name="F:NewMapTable.NavMesh">
+            <summary>
+            场景寻路文件
+            </summary>
+        </member>
+        <member name="F:NewMapTable.OpenMap">
+            <summary>
+            能否打开小地图
+            </summary>
+        </member>
+        <member name="F:NewMapTable.Minimap">
+            <summary>
+            小地图资源
+            </summary>
+        </member>
+        <member name="F:NewMapTable.MinimapSize">
+            <summary>
+            小地图资源大小
+            </summary>
+        </member>
+        <member name="F:NewMapTable.MapSize">
+            <summary>
+            游戏地图大小
+            </summary>
+        </member>
+        <member name="F:NewMapTable.X">
+            <summary>
+            小地图横偏移X
+            </summary>
+        </member>
+        <member name="F:NewMapTable.Y">
+            <summary>
+            小地图纵向偏移Y
+            </summary>
+        </member>
+        <member name="F:NewMapTable.WordMap">
+            <summary>
+            是否世界地图显示
+            </summary>
+        </member>
+        <member name="F:NewMapTable.WordMapPic">
+            <summary>
+            显示资源
+            </summary>
+        </member>
+        <member name="F:NewMapTable.Position">
+            <summary>
+            UI资源位置
+            </summary>
+        </member>
+        <member name="F:NewMapTable.Raw">
+            <summary>
+            能否原地复活
+            </summary>
+        </member>
+        <member name="F:NewMapTable.Expend">
+            <summary>
+            原地复活消耗
+            </summary>
+        </member>
+        <member name="F:NewMapTable.Time1">
+            <summary>
+            原地复活时间
+            </summary>
+        </member>
+        <member name="F:NewMapTable.Delay">
+            <summary>
+            原地延迟时间
+            </summary>
+        </member>
+        <member name="F:NewMapTable.Name">
+            <summary>
+            对应按钮名称
+            </summary>
+        </member>
+        <member name="F:NewMapTable.Time2">
+            <summary>
+            安全复活时间
+            </summary>
+        </member>
+        <member name="F:OpenSystemTable.ID">
+            <summary>
+            ID索引
+            </summary>
+        </member>
+        <member name="F:OpenSystemTable.System">
+            <summary>
+            系统ID
+            </summary>
+        </member>
+        <member name="F:OpenSystemTable.Name">
+            <summary>
+            系统名称
+            </summary>
+        </member>
+        <member name="F:OpenSystemTable.Icon">
+            <summary>
+            系统icon
+            </summary>
+        </member>
+        <member name="F:OpenSystemTable.Level">
+            <summary>
+            等级开启
+            </summary>
+        </member>
+        <member name="F:OpenSystemTable.Task">
+            <summary>
+            任务开启
+            </summary>
+        </member>
+        <member name="F:OpenSystemTable.Hint">
+            <summary>
+            开启是否提示
+            </summary>
+        </member>
+        <member name="F:OpenSystemTable.Window">
+            <summary>
+            所在窗口
+            </summary>
+        </member>
+        <member name="F:OpenSystemTable.BtnPath">
+            <summary>
+            按钮路径
+            </summary>
+        </member>
+        <member name="F:OpenSystemTable.FlyPath">
+            <summary>
+            飞入路径
+            </summary>
+        </member>
+        <member name="F:ParameterTable.ID">
+            <summary>
+            索引
+            </summary>
+        </member>
+        <member name="F:ParameterTable.IntVar">
+            <summary>
+            参数1
+            </summary>
+        </member>
+        <member name="F:ParameterTable.IntVars">
+            <summary>
+            参数2
+            </summary>
+        </member>
+        <member name="F:ParameterTable.StringVar">
+            <summary>
+            参数3
+            </summary>
+        </member>
+        <member name="F:ParameterTable.StringVars">
+            <summary>
+            参数4
+            </summary>
+        </member>
+        <member name="F:ParameterTable.FloatVar">
+            <summary>
+            参数5
+            </summary>
+        </member>
+        <member name="F:ParameterTable.FloatVars">
+            <summary>
+            参数6
+            </summary>
+        </member>
+        <member name="F:PvpSeasonTable.Id">
+            <summary>
+            ID
+            </summary>
+        </member>
+        <member name="F:PvpSeasonTable.Name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="F:PvpSeasonTable.Star">
+            <summary>
+            升段星数
+            </summary>
+        </member>
+        <member name="F:PvpSeasonTable.NeedScore">
+            <summary>
+            所需战场积分
+            </summary>
+        </member>
+        <member name="F:PvpSeasonTable.Icon">
+            <summary>
+            对应段位ICON
+            </summary>
+        </member>
+        <member name="F:PvpSeasonTable.RewardItem">
+            <summary>
+            赛季奖励物品
+            </summary>
+        </member>
+        <member name="F:PvpSeasonTable.RewardTime">
+            <summary>
+            奖励发放时间
+            </summary>
+        </member>
+        <member name="F:PvpSeasonTable.IsClear">
+            <summary>
+            赛季结束是否清分
+            </summary>
+        </member>
+        <member name="F:PvpSeasonTable.MailTitle">
+            <summary>
+            阶段奖励邮件标题
+            </summary>
+        </member>
+        <member name="F:PvpSeasonTable.MailContent">
+            <summary>
+            阶段奖励邮件标题
+            </summary>
+        </member>
+        <member name="F:PvpTable.ID">
+            <summary>
+            ID
+            </summary>
+        </member>
+        <member name="F:PvpTable.Type">
+            <summary>
+            对战类型
+            </summary>
+        </member>
+        <member name="F:PvpTable.VS">
+            <summary>
+            对战人数
+            </summary>
+        </member>
+        <member name="F:PvpTable.LevelValue">
+            <summary>
+            等级差值
+            </summary>
+        </member>
+        <member name="F:PvpTable.CanMakeTeam">
+            <summary>
+            是否开启组队
+            </summary>
+        </member>
+        <member name="F:PvpTable.Punishment">
+            <summary>
+            是否惩罚
+            </summary>
+        </member>
+        <member name="F:PvpTable.revive">
+            <summary>
+            复活
+            </summary>
+        </member>
+        <member name="F:PvpTable.IsRobotIn">
+            <summary>
+            是否加入机器人
+            </summary>
+        </member>
+        <member name="F:PvpTable.Ccpa">
+            <summary>
+            平均积分
+            </summary>
+        </member>
+        <member name="F:PvpTable.K">
+            <summary>
+            K
+            </summary>
+        </member>
+        <member name="F:PvpTable.KInc">
+            <summary>
+            K增加值
+            </summary>
+        </member>
+        <member name="F:PvpTable.UseKMax">
+            <summary>
+            是否用Kmax
+            </summary>
+        </member>
+        <member name="F:PvpTable.Kper">
+            <summary>
+            K
+            </summary>
+        </member>
+        <member name="F:PvpTable.Kperinc">
+            <summary>
+            K增加值
+            </summary>
+        </member>
+        <member name="F:PvpTable.Interval">
+            <summary>
+            间隔时间
+            </summary>
+        </member>
+        <member name="F:PvpTable.UseKperMax">
+            <summary>
+            是否用Kmax
+            </summary>
+        </member>
+        <member name="F:PvpTable.PrepareTime">
+            <summary>
+            准备超时
+            </summary>
+        </member>
+        <member name="F:PvpTable.BattleCountdown">
+            <summary>
+            战斗开始时间
+            </summary>
+        </member>
+        <member name="F:RankingAwardTable.ID">
+            <summary>
+            ID索引
+            </summary>
+        </member>
+        <member name="F:RankingAwardTable.Award">
+            <summary>
+            获得荣誉
+            </summary>
+        </member>
+        <member name="F:RankingAwardTable.Attenuation">
+            <summary>
+            奖励衰减
+            </summary>
+        </member>
+        <member name="F:RecasLockTable.ID">
+            <summary>
+            索引
+            </summary>
+        </member>
+        <member name="F:RecasLockTable.Silver">
+            <summary>
+            普通重铸元宝消耗
+            </summary>
+        </member>
+        <member name="F:RecasLockTable.ExpertSilver">
+            <summary>
+            高级重铸元宝消耗
+            </summary>
+        </member>
+        <member name="F:SkillGroupTable.ID">
+            <summary>
+            组合ID
+            </summary>
+        </member>
+        <member name="F:SkillGroupTable.Job">
+            <summary>
+            职业
+            </summary>
+        </member>
+        <member name="F:SkillGroupTable.Name">
+            <summary>
+            组合名称
+            </summary>
+        </member>
+        <member name="F:SkillGroupTable.Dec">
+            <summary>
+            组合说明
+            </summary>
+        </member>
+        <member name="F:SkillGroupTable.GroupSkill">
+            <summary>
+            组合内的技能
+            </summary>
+        </member>
+        <member name="F:SkillGroupTable.Level">
+            <summary>
+            解锁等级
+            </summary>
+        </member>
+        <member name="F:SkillLevelUpTable.ID">
+            <summary>
+            ID
+            </summary>
+        </member>
+        <member name="F:SkillLevelUpTable.LongDescribe">
+            <summary>
+            长描述
+            </summary>
+        </member>
+        <member name="F:SkillLevelUpTable.Critical">
+            <summary>
+            暴击判定
+            </summary>
+        </member>
+        <member name="F:SkillLevelUpTable.HarmType">
+            <summary>
+            伤害类型
+            </summary>
+        </member>
+        <member name="F:SkillLevelUpTable.AttributeObj">
+            <summary>
+            结算属性对象
+            </summary>
+        </member>
+        <member name="F:SkillLevelUpTable.Attribute">
+            <summary>
+            结算属性
+            </summary>
+        </member>
+        <member name="F:SkillLevelUpTable.MinAdd">
+            <summary>
+            万分比下限
+            </summary>
+        </member>
+        <member name="F:SkillLevelUpTable.MaxAdd">
+            <summary>
+            万分比上限
+            </summary>
+        </member>
+        <member name="F:SkillLevelUpTable.MinAddUpgrade">
+            <summary>
+            万分比下限增量
+            </summary>
+        </member>
+        <member name="F:SkillLevelUpTable.MaxAddUpgrade">
+            <summary>
+            万分比上限增量
+            </summary>
+        </member>
+        <member name="F:SkillLevelUpTable.MinValue">
+            <summary>
+            固定初始值下限
+            </summary>
+        </member>
+        <member name="F:SkillLevelUpTable.MaxValue">
+            <summary>
+            固定初始值上限
+            </summary>
+        </member>
+        <member name="F:SkillLevelUpTable.MinValueUpgrade">
+            <summary>
+            固定值下限增量
+            </summary>
+        </member>
+        <member name="F:SkillLevelUpTable.MaxValueUpgrade">
+            <summary>
+            固定值上限增量
+            </summary>
+        </member>
+        <member name="F:SkillLevelUpTable.Hatred">
+            <summary>
+            初始仇恨值
+            </summary>
+        </member>
+        <member name="F:SkillLevelUpTable.HatredUpgrade">
+            <summary>
+            仇恨值每级增加
+            </summary>
+        </member>
+        <member name="F:SkillTable.ID">
+            <summary>
+            ID
+            </summary>
+        </member>
+        <member name="F:SkillTable.Name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="F:SkillTable.ShortDescribe">
+            <summary>
+            短描述
+            </summary>
+        </member>
+        <member name="F:SkillTable.SkillType">
+            <summary>
+            技能类型
+            </summary>
+        </member>
+        <member name="F:SkillTable.Lock">
+            <summary>
+            技能释放中心（释放类型）
+            </summary>
+        </member>
+        <member name="F:SkillTable.AttackEffect">
+            <summary>
+            释放中心产生的特效
+            </summary>
+        </member>
+        <member name="F:SkillTable.WarningScope">
+            <summary>
+            指示范围
+            </summary>
+        </member>
+        <member name="F:SkillTable.EarlyWarning">
+            <summary>
+            范围指示特效
+            </summary>
+        </member>
+        <member name="F:SkillTable.ConjureDistance">
+            <summary>
+            施法距离
+            </summary>
+        </member>
+        <member name="F:SkillTable.ScopeEffect">
+            <summary>
+            范围特效
+            </summary>
+        </member>
+        <member name="F:SkillTable.SelfMotion">
+            <summary>
+            自动搜索方式
+            </summary>
+        </member>
+        <member name="F:SkillTable.Distance">
+            <summary>
+            辅助锁定距离
+            </summary>
+        </member>
+        <member name="F:SkillTable.Action">
+            <summary>
+            动作
+            </summary>
+        </member>
+        <member name="F:SkillTable.ActionDuration">
+            <summary>
+            动作持续时间
+            </summary>
+        </member>
+        <member name="F:SkillTable.Effect">
+            <summary>
+            以自己为中心的特效
+            </summary>
+        </member>
+        <member name="F:SkillTable.ProgressBar">
+            <summary>
+            是否显示读条
+            </summary>
+        </member>
+        <member name="F:SkillTable.Break">
+            <summary>
+            是否可被打断
+            </summary>
+        </member>
+        <member name="F:SkillTable.ScreenShake">
+            <summary>
+            屏幕震动
+            </summary>
+        </member>
+        <member name="F:SkillTable.SoundEffect">
+            <summary>
+            释放技能音效
+            </summary>
+        </member>
+        <member name="F:SkillTable.SkillIcon">
+            <summary>
+            技能ICON
+            </summary>
+        </member>
+        <member name="F:SkillTable.NearTableId">
+            <summary>
+            碰撞对象ID
+            </summary>
+        </member>
+        <member name="F:SkillTable.Displacement">
+            <summary>
+            位移ID
+            </summary>
+        </member>
+        <member name="F:SkillTable.SummonDelay">
+            <summary>
+            召唤延迟时间
+            </summary>
+        </member>
+        <member name="F:SkillTable.SummonID">
+            <summary>
+            召唤物ID
+            </summary>
+        </member>
+        <member name="F:SkillTable.TriggerDelay">
+            <summary>
+            召唤延迟时间
+            </summary>
+        </member>
+        <member name="F:SkillTable.BuffTriggerId">
+            <summary>
+            触发器ID
+            </summary>
+        </member>
+        <member name="F:SkillTable.NextSkillId">
+            <summary>
+            连击的下一个技能ID
+            </summary>
+        </member>
+        <member name="F:SkillTable.ValidTime">
+            <summary>
+            多久内有效
+            </summary>
+        </member>
+        <member name="F:SkillTable.MemoryTime">
+            <summary>
+            操作记忆时间
+            </summary>
+        </member>
+        <member name="F:SkillTable.CdGroup">
+            <summary>
+            公共CD组
+            </summary>
+        </member>
+        <member name="F:SkillTable.Profession">
+            <summary>
+            职业限制
+            </summary>
+        </member>
+        <member name="F:SkillTable.Type">
+            <summary>
+            技能类型细分
+            </summary>
+        </member>
+        <member name="F:SkillTable.ClearLevel">
+            <summary>
+            解锁等级
+            </summary>
+        </member>
+        <member name="F:SkillTable.Slot">
+            <summary>
+            槽位限制
+            </summary>
+        </member>
+        <member name="F:SkillTable.CoolingTime">
+            <summary>
+            冷却时间
+            </summary>
+        </member>
+        <member name="F:SkillTable.CoolingTimeUpgrade">
+            <summary>
+            冷却时间增量
+            </summary>
+        </member>
+        <member name="F:SkillTable.MP">
+            <summary>
+            法力消耗（固定值）
+            </summary>
+        </member>
+        <member name="F:SkillTable.MPUpgrade">
+            <summary>
+            法力消耗（固定值）每级增加
+            </summary>
+        </member>
+        <member name="F:SkillTable.MPC">
+            <summary>
+            初始法力消耗（万分比）
+            </summary>
+        </member>
+        <member name="F:SkillTable.MPCUpgrade">
+            <summary>
+            法力消耗（万分比）每级增加
+            </summary>
+        </member>
+        <member name="F:SkillTable.ItemID">
+            <summary>
+            消耗物品
+            </summary>
+        </member>
+        <member name="F:SlotUpgradeTable.ID">
+            <summary>
+            索引
+            </summary>
+        </member>
+        <member name="F:SlotUpgradeTable.UpgradeCost">
+            <summary>
+            普攻技能升级消耗
+            </summary>
+        </member>
+        <member name="F:SlotUpgradeTable.Property">
+            <summary>
+            获得属性
+            </summary>
+        </member>
+        <member name="F:SlotUpgradeTable.UpgradeCost1">
+            <summary>
+            技能槽1
+            </summary>
+        </member>
+        <member name="F:SlotUpgradeTable.Property1">
+            <summary>
+            获得属性1
+            </summary>
+        </member>
+        <member name="F:SlotUpgradeTable.UpgradeCost2">
+            <summary>
+            技能槽2
+            </summary>
+        </member>
+        <member name="F:SlotUpgradeTable.Property2">
+            <summary>
+            获得属性2
+            </summary>
+        </member>
+        <member name="F:SlotUpgradeTable.UpgradeCost3">
+            <summary>
+            技能槽3
+            </summary>
+        </member>
+        <member name="F:SlotUpgradeTable.Property3">
+            <summary>
+            获得属性3
+            </summary>
+        </member>
+        <member name="F:SlotUpgradeTable.UpgradeCost4">
+            <summary>
+            技能槽4
+            </summary>
+        </member>
+        <member name="F:SlotUpgradeTable.Property4">
+            <summary>
+            获得属性4
+            </summary>
+        </member>
+        <member name="F:SlotUpgradeTable.UpgradeCost5">
+            <summary>
+            技能槽5
+            </summary>
+        </member>
+        <member name="F:SlotUpgradeTable.Property5">
+            <summary>
+            获得属性5
+            </summary>
+        </member>
+        <member name="F:SummonTable.ID">
+            <summary>
+            索引
+            </summary>
+        </member>
+        <member name="F:SummonTable.Type">
+            <summary>
+            召唤物类型
+            </summary>
+        </member>
+        <member name="F:SummonTable.UnitType">
+            <summary>
+            召唤物类型
+            </summary>
+        </member>
+        <member name="F:SummonTable.UnitId">
+            <summary>
+            召唤物ID
+            </summary>
+        </member>
+        <member name="F:SummonTable.UnitCallDistance">
+            <summary>
+            召唤物距离
+            </summary>
+        </member>
+        <member name="F:SummonTable.UnitCount">
+            <summary>
+            一次召唤数量
+            </summary>
+        </member>
+        <member name="F:SummonTable.UnitCallAngle">
+            <summary>
+            召唤物角度
+            </summary>
+        </member>
+        <member name="F:SummonTable.UnitAliveTime">
+            <summary>
+            存活时间
+            </summary>
+        </member>
+        <member name="F:SummonTable.UnitAliveNum">
+            <summary>
+            存活数量
+            </summary>
+        </member>
+        <member name="F:SummonTable.UnitDeathBound">
+            <summary>
+            死亡挂钩
+            </summary>
+        </member>
+        <member name="F:SummonTable.Ai">
+            <summary>
+            召唤物AI
+            </summary>
+        </member>
+        <member name="F:SummonTable.paramList">
+            <summary>
+            AI参数扩展
+            </summary>
+        </member>
+        <member name="F:SummonTable.Attr">
+            <summary>
+            召唤物基础属性
+            </summary>
+        </member>
+        <member name="F:SummonTable.StatBound">
+            <summary>
+            属性关联
+            </summary>
+        </member>
+        <member name="F:SurnameTable.ID">
+            <summary>
+            序号
+            </summary>
+        </member>
+        <member name="F:SurnameTable.Sur">
+            <summary>
+            姓
+            </summary>
+        </member>
+        <member name="M:TableManager.InitTxtTable(System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            初始化所有表格
+            </summary>
+            <param name="GetTxt">根据表名返回Txt</param>
+        </member>
+        <member name="F:TaskTable.ID">
+            <summary>
+            序号
+            </summary>
+        </member>
+        <member name="F:TaskTable.name">
+            <summary>
+            任务名称
+            </summary>
+        </member>
+        <member name="F:TaskTable.type">
+            <summary>
+            类型
+            </summary>
+        </member>
+        <member name="F:TaskTable.typeorder">
+            <summary>
+            类型顺序
+            </summary>
+        </member>
+        <member name="F:TaskTable.camp">
+            <summary>
+            阵营
+            </summary>
+        </member>
+        <member name="F:TaskTable.pretask">
+            <summary>
+            前置任务
+            </summary>
+        </member>
+        <member name="F:TaskTable.Next">
+            <summary>
+            后置任务
+            </summary>
+        </member>
+        <member name="F:TaskTable.level">
+            <summary>
+            领取等级
+            </summary>
+        </member>
+        <member name="F:TaskTable.maxlevel">
+            <summary>
+            最高可领取等级
+            </summary>
+        </member>
+        <member name="F:TaskTable.startnpc">
+            <summary>
+            起始npc
+            </summary>
+        </member>
+        <member name="F:TaskTable.endnpc">
+            <summary>
+            结束npc
+            </summary>
+        </member>
+        <member name="F:TaskTable.itemsreceive">
+            <summary>
+            接受任务获得道具
+            </summary>
+        </member>
+        <member name="F:TaskTable.exp">
+            <summary>
+            任务经验
+            </summary>
+        </member>
+        <member name="F:TaskTable.rewarditems">
+            <summary>
+            道具奖励
+            </summary>
+        </member>
+        <member name="F:TaskTable.DropGroupID">
+            <summary>
+            掉落组ID
+            </summary>
+        </member>
+        <member name="F:TaskTable.desc">
+            <summary>
+             描述
+            </summary>
+        </member>
+        <member name="F:TaskTable.detaileddesc">
+            <summary>
+            详细描述
+            </summary>
+        </member>
+        <member name="F:TaskTable.condition">
+            <summary>
+            任务类型
+            </summary>
+        </member>
+        <member name="F:TaskTable.request">
+            <summary>
+            完成条件描述
+            </summary>
+        </member>
+        <member name="F:TaskTable.AutoReceive">
+            <summary>
+            自动接取
+            </summary>
+        </member>
+        <member name="F:TaskTable.AutoFinish">
+            <summary>
+            自动完成
+            </summary>
+        </member>
+        <member name="F:TaskTable.dungeon">
+            <summary>
+            任务直接进副本
+            </summary>
+        </member>
+        <member name="F:TaskTable.PlayMove">
+            <summary>
+            播放动画
+            </summary>
+        </member>
+        <member name="F:TaskTable.MapRegionID">
+            <summary>
+            接受任务传送地图
+            </summary>
+        </member>
+        <member name="F:TaskTable.tga">
+            <summary>
+            任务标签
+            </summary>
+        </member>
+        <member name="F:TaskTable.is_show">
+            <summary>
+            等级不足是否显示
+            </summary>
+        </member>
+        <member name="F:TaskTable.Findpath">
+            <summary>
+            寻路ID
+            </summary>
+        </member>
+        <member name="F:TasktalkTable.ID">
+            <summary>
+            序号
+            </summary>
+        </member>
+        <member name="F:TasktalkTable.taskid">
+            <summary>
+            任务ID
+            </summary>
+        </member>
+        <member name="F:TasktalkTable.speaktype">
+            <summary>
+            说话类型
+            </summary>
+        </member>
+        <member name="F:TasktalkTable.stage">
+            <summary>
+            阶段
+            </summary>
+        </member>
+        <member name="F:TasktalkTable.order">
+            <summary>
+            对话顺序
+            </summary>
+        </member>
+        <member name="F:TasktalkTable.speakdesc">
+            <summary>
+            说话内容
+            </summary>
+        </member>
+        <member name="F:TextTable.ID">
+            <summary>
+            ID索引
+            </summary>
+        </member>
+        <member name="F:TextTable.Dec">
+            <summary>
+            文本内容
+            </summary>
+        </member>
+        <member name="F:TimeLimitTable.ID">
+            <summary>
+            序号
+            </summary>
+        </member>
+        <member name="F:TimeLimitTable.ItemLimit">
+            <summary>
+            道具时限
+            </summary>
+        </member>
+        <member name="F:TimeLimitTable.LimitParameter">
+            <summary>
+            时限参数
+            </summary>
+        </member>
+        <member name="F:TriggerTable.ID">
+            <summary>
+            触发器ID
+            </summary>
+        </member>
+        <member name="F:TriggerTable.ContinueTime">
+            <summary>
+            持续时间（毫秒）
+            </summary>
+        </member>
+        <member name="F:TriggerTable.Interval">
+            <summary>
+            触发CD（毫秒）
+            </summary>
+        </member>
+        <member name="F:TriggerTable.Count">
+            <summary>
+            起效次数
+            </summary>
+        </member>
+        <member name="F:TriggerTable.NeedType">
+            <summary>
+            触发条件
+            </summary>
+        </member>
+        <member name="F:TriggerTable.TriggerType">
+            <summary>
+            触发方式
+            </summary>
+        </member>
+        <member name="F:TriggerTable.Parameter">
+            <summary>
+            触发参数
+            </summary>
+        </member>
+        <member name="F:TriggerTable.TriggerProbability">
+            <summary>
+            触发概率（万分率）
+            </summary>
+        </member>
+        <member name="F:TriggerTable.BuffID">
+            <summary>
+            buff的ID
+            </summary>
+        </member>
+        <member name="F:TroopsTable.ID">
+            <summary>
+            ID索引
+            </summary>
+        </member>
+        <member name="F:TroopsTable.BigType">
+            <summary>
+            目标大类
+            </summary>
+        </member>
+        <member name="F:TroopsTable.BigName">
+            <summary>
+            目标大类名称
+            </summary>
+        </member>
+        <member name="F:TroopsTable.Type">
+            <summary>
+            目标小类
+            </summary>
+        </member>
+        <member name="F:TroopsTable.Name">
+            <summary>
+            小类名称
+            </summary>
+        </member>
+        <member name="F:TroopsTable.Target">
+            <summary>
+            目标调用内容
+            </summary>
+        </member>
+        <member name="F:TroopsTable.Icon">
+            <summary>
+            类型图标
+            </summary>
+        </member>
+        <member name="F:TroopsTable.Level">
+            <summary>
+            等级段区间
+            </summary>
+        </member>
+        <member name="F:TroopsTable.MateLevel">
+            <summary>
+            等级区间匹配方式
+            </summary>
+        </member>
+        <member name="F:WarehouseTable.ID">
+            <summary>
+            仓库格子ID
+            </summary>
+        </member>
+        <member name="F:WarehouseTable.OpenLevel">
+            <summary>
+            开启等级
+            </summary>
+        </member>
+        <member name="F:WarehouseTable.Consume">
+            <summary>
+            开启消耗
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -30,24 +30,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="EPPlus">
-      <HintPath>..\Packages\EPPlus.dll</HintPath>
-    </Reference>
-    <Reference Include="ICSharpCode.SharpZipLib">
-      <HintPath>..\Packages\NPOI4.0\ICSharpCode.SharpZipLib.dll</HintPath>
-    </Reference>
-    <Reference Include="NPOI">
-      <HintPath>..\ExportTableTool\NPOI2.0\NPOI.dll</HintPath>
-    </Reference>
-    <Reference Include="NPOI.OOXML">
-      <HintPath>..\Packages\NPOI4.0\NPOI.OOXML.dll</HintPath>
-    </Reference>
-    <Reference Include="NPOI.OpenXml4Net">
-      <HintPath>..\Packages\NPOI4.0\NPOI.OpenXml4Net.dll</HintPath>
-    </Reference>
-    <Reference Include="NPOI.OpenXmlFormats">
-      <HintPath>..\Packages\NPOI4.0\NPOI.OpenXmlFormats.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -58,14 +40,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BinaryUtil.cs" />
-    <Compile Include="Excel\ExcelConvert.cs" />
-    <Compile Include="Excel\ExcelUtil.cs" />
-    <Compile Include="Excel\NPOIUtil.cs" />
-    <Compile Include="MemoryUtility.cs" />
-    <Compile Include="PathUtility.cs" />
+    <Compile Include="Memory\MemoryUtility.cs" />
+    <Compile Include="PathUtil\PathHelper.cs" />
+    <Compile Include="PathUtil\DirectoryHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Txt\TxtUtil.cs" />
+    <Compile Include="TxtUtil\TxtUtil.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

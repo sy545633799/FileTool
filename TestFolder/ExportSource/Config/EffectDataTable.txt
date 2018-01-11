@@ -1,0 +1,84 @@
+ID	Beizhu	Path	Type	Move	SpecialDelay	Time	Position
+索引	备注	对应特效	特效类型	特效绑定	特效延迟	存活时间	偏移X,Y,Z
+int	string	string	string	int	float	int	float[]
+特效索引ID	策划备注用	具体特效资源	绑点	特效是否跟随绑点移动\n0、不跟随\n1、跟随 \n2、跟随父节点	特效延迟触发事件\n单位：秒	该特效的持续时间\n单位：毫秒	默认：0，0，0（从角色脚下发出）\nX长，Y高，Z宽
+1	0	1	1	1	1	1	1
+1	法师普攻特效fire	EffectPrefab/hero/master_nv/pugong/fire/pugong_fire	Bip001 Footsteps	1	0	5000	0,1,0
+2	法师普攻特效trace	EffectPrefab/hero/master_nv/pugong/trace/trace_01	Bip001 Footsteps	1	0	5000	0,1,1.5
+3	法师普攻特效hit	EffectPrefab/hero/master_nv/pugong/hit/pugong_hit	Bip001 Footsteps	1	0	5000	0,1,0
+4	法师吹风特效-风	EffectPrefab/hero/master_nv/second edition/skill_01/fire/master_skill_01_fire	Bip001 Footsteps	1	0.45	5000	0,1.5,0.7
+5	法师吹风左手特效	EffectPrefab/hero/master_nv/second edition/skill_01/buff/shoubutexiao	Bip001 Prop2	1	0	5000	0,1.5,0.7
+6	法师天雷闪特效hit	EffectPrefab/hero/master_nv/skill01/hit/shandianlian_hit	Bip001 Footsteps	1	0	5000	0,0,0
+7	法师雷暴特效hit	EffectPrefab/hero/master_nv/skill02/fire/hero_master_skill02_leibao	Bip001 Footsteps	1	0.66	5000	0,0.4,0
+8	法师护盾特效	EffectPrefab\hero\master_nv\second edition\skill_03\fire\hero_master_skill_03_dun_fire	Bip001 Footsteps	1	0	5000	0,0.9,0
+9	法师护盾爆炸特效	EffectPrefab/hero/master_nv/skill03/fire/hero_master_skill03_bao	Bip001 Footsteps	1	0.1	5000	0,0,0
+10	法师末日雷劫特效	EffectPrefab/hero/master_nv/skill04/fire/hero_master_skill04_dianyu	Bip001 Footsteps	1	0.4	5000	0,0,0
+11	法师花舞特效	EffectPrefab\hero\master_nv\second edition\skill_02\fire\hero_master_skill_02_binghua_fire	Bip001 Footsteps	1	0.4	5000	0,0,0
+12	法师冰1特效	EffectPrefab/hero/master_nv/skill05/fire/master_skill05_bingbao	Bip001 Footsteps	1	0.333	5000	0,0,0
+13	法师单体引爆特效	EffectPrefab/hero/master_nv/skill06/fire/master_skill06_yinran	Bip001 Footsteps	1	0.233	5000	0,0,0
+14	法师单体诅咒特效	EffectPrefab/hero/master_nv/skill08/trace/master_skill08_trace	Bip001 Footsteps	1	0.333	5000	0,0,0
+15	法师单体诅咒特效受击	EffectPrefab/hero/master_nv/skill08/hit/master_skill08_hit	Bip001 Footsteps	1	0	5000	0,0,0
+16	法师冰系受击	EffectPrefab/common/buff/ef_common_baodian_02_lan.prefab	Bip001 Footsteps	1	0	5000	0,0,0
+17	法师自身加速暴击	/EffectPrefab/hero/master_nv/skill011/fire/master_skill11_jiasu	Bip001 Footsteps	1	0.834	5000	0,0,0
+18	法师群加血	EffectPrefab/hero/master_nv/skill013/fire/master_skill13	Bip001 Footsteps	1	1	5000	0,0,0
+19	法师暴风雪	EffectPrefab/hero/master_nv/skill014/fire/master_skill_014_baofengxue	Bip001 Footsteps	1	0.6	5000	0,0,0
+20	法师陨石	EffectPrefab/hero/master_nv/skill015/trace/master_skill_15_trace	Bip001 Footsteps	1	0.733	5000	0,0,0
+21	法师群净化	EffectPrefab/hero/master_nv/skill09/fire/master_skill_09_buff	Bip001 Footsteps	1	0.667	5000	0,0,0
+22	法师群冰冻		Bip001 Footsteps	1	0.333	5000	0,0,0
+100	战士普攻1	EffectPrefab/hero/zhanshi/pugong/trace/pugong_01	Bip001 Footsteps	1	0.16	5000	0,0,0
+101	战士普攻2	EffectPrefab/hero/zhanshi/pugong/trace/pugong_02	Bip001 Footsteps	1	0	5000	0,0,0
+102	战士普攻3	EffectPrefab/hero/zhanshi/pugong/trace/pugong_03	Bip001 Footsteps	1	0.054	5000	0,0,0
+103	战士普攻4	EffectPrefab/hero/master_nv/skill04/fire/hero_master_skill04_dianyu	Bip001 Footsteps	1	0	5000	0,0,0
+104	战士横扫技能自身特效	EffectPrefab/hero/zhanshi/skill_01/fire/skill_01_juqi	Bip001 Footsteps	1	0	5000	0,0,0
+105	战士横扫技能挥砍特效	EffectPrefab/hero/zhanshi/skill_01/trace/skill_01_trace	Bip001 Footsteps	1	0.34	5000	0,0,-2
+106	战士伤害嘲讽技能爆裂特效	EffectPrefab/hero/zhanshi/skill_02/fire/zhanshi_skill02	Bip001 Footsteps	1	0	5000	0,0,0
+107	战士跃斩技能自身特效	EffectPrefab/hero/zhanshi/skill_03/fire/juq	Bip001 Footsteps	1	0	5000	0,0,0
+108	战士跃斩技能劈砍特效	EffectPrefab/hero/zhanshi/skill_03/trace/skill_03_trace	Bip001 Footsteps	1	0.46	5000	0,0,0
+109	战士细雪技能劈砍特效	EffectPrefab/hero/zhanshi/skill_04/fire/zhanshi_skill04	Bip001 Footsteps	1	0.22	5000	0,0,0
+110	战士普攻受击	EffectPrefab/hero/zhanshi/pugong/hit/zhanshi_baodian	Bip001 Footsteps	1	0	3000	0,0,0
+200	枪手普攻1枪口火光	EffectPrefab/hero/guns/pugong/fire/hero_guns_pugong_fire	Bip001 Prop2	0	0.4	5000	0.8,0,-0.6
+201	枪手普攻2枪口火光	EffectPrefab/hero/guns/pugong/fire/hero_guns_pugong_fire	Bip001 Prop1	0	0.5	5000	0.8,0,-0.6
+202	枪手普攻3枪口火光	EffectPrefab/hero/guns/pugong/fire/hero_guns_pugong_fire	Bip001 Prop2	0	0.333	5000	0.8,0,-0.6
+203	枪手普攻1子弹	EffectPrefab/hero/guns/pugong/trace/hero_guns_pugong_trace	Bip001 Footsteps	2	0	5000	0,0,0
+204	枪手普攻2子弹	EffectPrefab/hero/guns/pugong/trace/hero_guns_pugong_trace	Bip001 Footsteps	2	0	5000	0,0,0
+205	枪手普攻3子弹	EffectPrefab/hero/guns/pugong/trace/hero_guns_pugong_trace	Bip001 Footsteps	2	0	5000	0,0,0
+206	枪手普攻1受击		Bip001 Footsteps	1	0	5000	0,0,0
+207	枪手1技能3010枪口火光	EffectPrefab/hero/guns/skill_01/fire/hero_guns_skill01_fire	Bip001 Footsteps	0	0.26	5000	0,0,0.2
+208	枪手1技能3010子弹特效	EffectPrefab/hero/guns/skill_01/trace/hero_guns_skill01_trace	Bip001 Footsteps	0	0.26	5000	0,0,0
+209	枪手1技能3010受击	EffectPrefab/hero/guns/skill_01/hit/hero_guns_skill01_hit	Bip001 Footsteps	0	0.26	5000	0,0,0.5
+210	枪手2技能3020自身特效1	EffectPrefab/hero/guns/skill_02/fire/hero_guns_skill_02_fire01	Bip001 Footsteps	0	0.2	5000	0,0,0
+211	枪手2技能3020自身特效2	EffectPrefab/hero/guns/skill_02/fire/hero_guns_skill_02_fire02	Bip001 Footsteps	0	0	5000	0,0,0
+212	枪手2技能3020子弹	EffectPrefab/hero/guns/skill_02/trace/hero_guns_skill_02_trace	Bip001 Footsteps	0	0.2	5000	0,0,0
+213	枪手3技能3030特效	EffectPrefab/hero/guns/skill_03/trace/hero_guns_skill_03_trace	Bip001 Footsteps	1	0	5000	0,0,0
+214	枪手4技能3040砸落特效	EffectPrefab/hero/guns/skill_04/fire/hero_guns_skill_04_fire	Bip001 Footsteps	1	0	5000	0,0,0
+215	枪手4技能3040瞄准特效	EffectPrefab/hero/guns/skill_04/trace/hero_guns_skill_04_trace.prefab	Bip001 Footsteps	1	0	5000	0,0,0
+216	枪手5技能3050地面特效	EffectPrefab/hero/guns/skill_05/fire/hero_guns_skill_05_fire	Bip001 Footsteps	1	0	5000	0,0.1,0
+217	枪手5技能3050枪口火焰1	EffectPrefab/hero/guns/skill_05/fire_baodian/hero_guns_skill_05_qiangkou_01	Bip001 Footsteps	1	0	5000	0,0,0
+218	枪手5技能3050枪口火焰2	EffectPrefab/hero/guns/skill_05/fire_baodian/hero_guns_skill_05_qiangkou_02	Bip001 Footsteps	1	0	5000	0,0,0
+219	枪手5技能3050子弹特效	EffectPrefab/hero/guns/skill_05/trace/hero_guns_skill_05_trace	Bip001 Footsteps	1	0	5000	0,0,0
+220	枪手4技能左手特效	EffectPrefab/hero/guns/skill_04_b/buff/hero_guns_skill_04_b_buff_left	Bip001 Prop2	2	0.5	1333	0,0,0
+221	枪手4技能右手特效	EffectPrefab/hero/guns/skill_04_b/buff/hero_guns_skill_04_b_buff_right	Bip001 Prop1	2	0.5	1333	0,0,0
+222	枪手4技能身前传送门特效	EffectPrefab/hero/guns/skill_04_b/fire/hero_guns_skill_04_b_dachuansongmen	Bip001 Footsteps	0	0	5000	0,0,0
+223	枪手4技能爆炸特效	EffectPrefab/hero/guns/skill_04_b/fire/hero_guns_skill_04_b_fire_baozha	Bip001 Footsteps	1	0	5000	0,0,0.2
+224	枪手4技能枪口爆点	EffectPrefab/hero/guns/skill_04_b/fire/hero_guns_skill_04_b_qiangkoubaodian	Bip001 Footsteps	1	0	5000	0,0,0
+225	枪手4技能脚底烟尘	EffectPrefab/hero/guns/skill_04_b/fire/hero_guns_skill_04_b_jiaodiyan	Bip001 Footsteps	1	0	5000	0,0,0
+226	枪手4技能左侧枪口子弹	EffectPrefab/hero/guns/skill_04_b/trace/hero_guns_skill_04_b_qiangkou_left	Bip001 Prop2	2	0.833	667	0,0,0
+227	枪手4技能右侧枪口子弹	EffectPrefab/hero/guns/skill_04_b/trace/hero_guns_skill_04_b_qiangkou_right	Bip001 Prop1	2	0.833	667	0,0,0
+228	枪手3技能buff特效	EffectPrefab/hero/guns/skill_03/buff/hero_guns_skill_03_buff	Bip001 Prop2	1	0	8000	0,0,0
+229	枪手3技能buff特效	EffectPrefab/hero/guns/skill_03/buff/hero_guns_skill_03_buff	Bip001 Prop1	1	0	8000	0,0,0
+600	通用回血1	EffectPrefab/common/buff/ef_commom_huixue_01	Bip001 Footsteps	1	0	100000	0,0,0
+601	通用回血2	EffectPrefab/common/buff/ef_commom_huixue_02	Bip001 Footsteps	1	0	100000	0,0,0
+602	通用回血3	EffectPrefab/common/buff/ef_commom_huixue_03	Bip001 Footsteps	1	0	100000	0,0,0
+603	通用加速1	EffectPrefab/common/buff/ef_commom_jiasu_01	Bip001 Footsteps	1	0	100000	0,0,0
+604	通用晕眩1	EffectPrefab/common/buff/ef_commom_xuanyun_01	Bip001 Footsteps	1	0	100000	0,0,0
+605	通用晕眩2	EffectPrefab/common/buff/ef_commom_xuanyun_02	Bip001 Footsteps	1	0	100000	0,0,0
+606	通用减速1	EffectPrefab/common/buff/ef_common_jiansu_01	Bip001 Footsteps	1	0	100000	0,0,0
+607	通用减速1	EffectPrefab/common/buff/ef_common_jiansu_02	Bip001 Footsteps	1	0	100000	0,0,0
+1000101	小怪特效tongqu	EffectPrefab/xiaoguai/tongqu/pugong/trace/xiaoguai_tongqu_pugong	Bip001 Footsteps	1	0.1	5000	0.2,0,0.5
+1000201	普攻-嚻	EffectPrefab/xiaoguai/xiao/pugong/xiaoguai_xiao_trace_01	Bip001 Footsteps	1	0.5	5000	0,0,0
+1000301	普攻-竦斯	EffectPrefab/xiaoguai/songsi/pugong/trace/xiaoguai_songsi_pugong_trace	Bip001 Footsteps	1	0.5	5000	0,0,0
+1000302	技能1-竦斯	EffectPrefab/xiaoguai/songsi/skill_01/fire/xiaoguai_songsi_skill_01	Bip001 Footsteps	1	0.5	5000	0,0,0
+1000401	小怪普攻-孟极	EffectPrefab/hero/zhanshi/pugong/trace/pugong_01	Bip001 Footsteps	1	0.5	5000	0,0,0
+1000501	小怪普攻-鸪鸟	EffectPrefab/hero/zhanshi/pugong/trace/pugong_01	Bip001 Footsteps	1	0.5	5000	0,0,0
+1000502	技能1-鸪鸟	EffectPrefab/hero/zhanshi/pugong/trace/pugong_01	Bip001 Footsteps	1	0.5	5000	0,0,0
+1000503	技能2-鸪鸟	EffectPrefab/hero/zhanshi/pugong/trace/pugong_01	Bip001 Footsteps	1	0.5	5000	0,0,0

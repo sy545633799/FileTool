@@ -1,0 +1,9 @@
+ID	Type	VS	LevelValue	CanMakeTeam	Punishment	revive	Target	IsRobotIn	Ccpa	K	KInc	UseKMax	Kper	Kperinc	Interval	UseKperMax	PrepareTime	BattleCountdown
+ID	对战类型	对战人数	等级差值	是否开启组队	是否惩罚	复活	活动目标	是否加入机器人	平均积分	K	K增加值	是否用Kmax	K	K增加值	间隔时间	是否用Kmax	准备超时	战斗开始时间
+int	string	int	int	int[]	int[]	int[]	int[]	int	int	int	int	int	int	int	int	int	int	int
+	1-积分战\n2-据点资源战\n3-阵营战	双方对战人数	队长与队员等级差值	是否能组队参加，队长与队员等级差	是否惩罚，单次惩罚时间（秒）	初始复活时间，复活惩罚系数	类型1：积分制\n类型2：资源量	0-不加入\n1-加入					万分比	万分比				
+3	1	3	3	3	3	3	0	3	1	1	1	3	1	1	3	3	3	3
+1101	1	3	10	1,10	1,10	3,1	1,100	0	10000	300	300	1000	100	100	10	500	30	5
+1101	1	3	10	1,10	1,10	3,0	1,100	1	10000	300	300	1000	100	100	10	500	30	5
+1201	2	3	10	1,10	0,0	0,0	2,1000	0	10000	300	300	1000	100	100	10	500	30	5
+1201	2	15	10	1,10	0,0	0,0	2,1000	0	10000	300	300	1000	100	100	10	500	30	5

@@ -488,6 +488,7 @@ namespace ExportTableTool.ExecleOperation
             compilerParameters.ReferencedAssemblies.Add("EPPlus.dll");
             compilerParameters.GenerateInMemory = false;
             string filePath = GenerateOutPath(ConfigConst.OutPath,spiltFied, string.Empty, "\\DMNTableData.dll");
+            
             compilerParameters.CompilerOptions = "/doc:"+ GenerateOutPath(ConfigConst.OutPath, spiltFied, string.Empty, "\\DMNTableDataDoc.xml");
             compilerParameters.OutputAssembly = filePath;
             CompilerResults cr = cSharpCodeProvider.CompileAssemblyFromFile(compilerParameters, _filesPath[spiltFied].ToArray());

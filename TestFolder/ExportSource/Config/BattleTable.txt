@@ -1,0 +1,5 @@
+ID	Award	Attenuation
+ID索引	胜负奖励	奖励衰减
+int	int[]	int[]
+ID索引	胜方奖励，负方奖励\n奖励内容：荣誉值	衰减次数，衰减比例（万分比）
+3	3	3

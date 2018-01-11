@@ -1,0 +1,6 @@
+ID	Dec	Wind
+ID索引	策划备注	窗口ID
+int	string	string
+ID索引	策划备注	配置窗口的名称，后面若有（Clone），必须加上，从unity里加
+3	0	pe
+1	副本进入窗口	UIDungeonEnterWindow(Clone)

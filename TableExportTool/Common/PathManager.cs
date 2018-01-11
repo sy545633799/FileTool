@@ -11,7 +11,7 @@ namespace TableExportTool
         private static string configPath = Path.Combine(Application.StartupPath, "pathconfig.txt");
         public static FilePath filePath;
 
-        public static void LoadFilePath(Action callback)
+        public static FilePath LoadFilePath(Action callback)
         {
             try
             {
@@ -22,22 +22,14 @@ namespace TableExportTool
                 filePath = new FilePath();
             }
             callback?.Invoke();
+
+            return filePath;
         }
 
         public static void SaveFilePath()
         {
             if (filePath != null)
                 TxtUtil.SaveToPath(configPath, filePath, false);
-        }
-
-        public static void SelectPath(Action<string> callback)
-        {
-            FolderBrowserDialog fbd = new FolderBrowserDialog();
-            if (fbd.ShowDialog() == DialogResult.OK)
-            {
-                callback(fbd.SelectedPath);
-                SaveFilePath();
-            }
         }
     }
 }
